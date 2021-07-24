@@ -15,6 +15,7 @@ import { RegisterComponent } from './auth/register/register.component';
 import {HttpClientModule, HTTP_INTERCEPTORS} from '@angular/common/http';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { AuthInterceptor } from './shared/auth-interceptor.service';
+import { UserDashboardComponent } from './users/user-dashboard/user-dashboard.component';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { AuthInterceptor } from './shared/auth-interceptor.service';
     AgentListComponent,
     AgentDetailComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    UserDashboardComponent
   ],
   imports: [
     BrowserModule,

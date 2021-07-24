@@ -1,1 +1,41 @@
-<p>login works!</p>
+<form action="#" class="popupHolderWrap bgLightDark center-block popupLarge popupLoginFrom" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+  <ul class="list-unstyled popupTabsetList text-center fwBold text-uppercase fontNeuron">
+    <li class="active"><a href="#tab01">LOGIN</a></li>
+    <li><a [routerLink]="'/register'" >REGISTER</a></li>
+  </ul>
+  <div class="tab-content">
+
+    <div id="tab02">
+      <div class="popupColsHolder">
+        <div class="col bgWhite">
+          <!-- Errors -->
+
+          <div *ngIf="errors?.email" class="alert alert-danger mt-3">
+            {{ errors?.email }}
+          </div>
+          <div *ngIf="errors?.password" class="alert alert-danger mt-3">
+            {{ errors?.password }}
+          </div>
+          <div *ngIf="errors?.error" class="alert alert-danger mt-3">
+            {{ errors?.error }}
+          </div>
+
+          <div class="form-group">
+            <input type="email" class="form-control elemenBlock" placeholder="Email Address" formControlName="email">
+          </div>
+          <div class="form-group">
+            <input type="password" class="form-control elemenBlock" placeholder="Password" formControlName="password">
+          </div>
+          <button type="submit" class="btn btn-primary elemenBlock fontNeuron fwNormal text-uppercase btnSubmit">LOGIN</button>
+          <a href="#" class="linkForget">Forgot Password?</a>
+        </div>
+        <div class="col">
+          <p>You Can Login using your facebook Profile or Google account</p>
+          <button type="button" class="btnSocial btnFb elemenBlock"><i class="fab fa-facebook-f btnIco"></i> Facebook Connect</button>
+          <button type="button" class="btnSocial btnTw elemenBlock"><i class="fab fa-twitter btnIco"></i> Twitter Connect</button>
+          <button type="button" class="btnSocial btnG elemenBlock"><i class="fab fa-google btnIco"></i> Google Connect</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>

@@ -129,13 +129,25 @@
             <!-- headerSearchForm -->
             <ul class="list-unstyled UserLinksList UserLinksList4 text-uppercase">
               <li>
-                <a href="#popup1" class="lightbox">
+                <a href="#" class="lightbox" *ngIf="isSignedIn" [routerLink]="'/user-dashboard'">
+                  <i class="fi flaticon-social icn hidden-md hidden-lg"></i>
+                  <strong class="text fwNormal hidden-xs hidden-sm">User Dashboard</strong>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="lightbox" *ngIf="isSignedIn" (click)="signOut()">
+                  <i class="fi flaticon-social icn hidden-md hidden-lg"></i>
+                  <strong class="text fwNormal hidden-xs hidden-sm">Log Out</strong>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="lightbox" *ngIf="!isSignedIn" [routerLink]="'/login'">
                   <i class="fi flaticon-social icn hidden-md hidden-lg"></i>
                   <strong class="text fwNormal hidden-xs hidden-sm">Login</strong>
                 </a>
               </li>
               <li>
-                <a href="#popup1" class="lightbox">
+                <a href="#" class="lightbox" *ngIf="!isSignedIn" [routerLink]="'/register'">
                   <i class="fi flaticon-edit icn hidden-md hidden-lg"></i>
                   <strong class="text fwNormal hidden-xs hidden-sm">Register</strong>
                 </a>
@@ -158,108 +170,4 @@
     </div>
   </div>
 </header>
-<!-- pagePopupWrap -->
-<div class="popup-holder">
-  <div id="popup1" class="lightbox-demo">
-    <!-- popupLoginFrom -->
-    <ul class="list-unstyled popupTabsetList text-center fwBold text-uppercase fontNeuron">
-        <li class="active"><a href="#tab01">LOGIN</a></li>
-        <li><a href="#tab02">REGISTER</a></li>
-      </ul>
-      <div class="tab-content">
-        <div id="tab01" class="tab-active">
-          <div class="popupColsHolder">
-            <div class="col bgWhite">
-              <form class="popupHolderWrap center-block popupLarge popupLoginFrom" [formGroup]="loginForm" (ngSubmit)="onSubmitLogin()">
-                <!-- Errors -->
-                <div *ngIf="errors?.email" class="alert alert-danger mt-3">
-                  {{ errors?.email }}
-                </div>
-                <div *ngIf="errors?.password" class="alert alert-danger mt-3">
-                  {{ errors?.password }}
-                </div>
-                <div *ngIf="errors?.error" class="alert alert-danger mt-3">
-                  {{ errors?.error }}
-                </div>
-              <div class="form-group">
-                <input type="text" class="form-control elemenBlock" placeholder="User Namer" formControlName="email">
-              </div>
-              <div class="form-group">
-                <input type="password" class="form-control elemenBlock" placeholder="Password" formControlName="password">
-              </div>
-              <div class="form-group">
-                <label class="fwNormal customLabelCheck">
-                  <input type="checkbox" class="customFormInputReset">
-                  <span class="fakeCheckbox"></span>
-                  <span class="fakeLabel">Remember me</span>
-                </label>
-              </div>
-              <button type="submit" class="btn btnSecondary elemenBlock fontNeuron fwNormal text-uppercase btnSubmit">LOGIN</button>
-              <a href="#" class="linkForget">Forgot Password?</a>
-              </form>
-            </div>
 
-            <div class="col">
-              <p>You Can Login using your facebook Profile or Google account</p>
-              <button type="button" class="btnSocial btnFb elemenBlock"><i class="fab fa-facebook-f btnIco"></i> Facebook Connect</button>
-              <button type="button" class="btnSocial btnTw elemenBlock"><i class="fab fa-twitter btnIco"></i> Twitter Connect</button>
-              <button type="button" class="btnSocial btnG elemenBlock"><i class="fab fa-google btnIco"></i> Google Connect</button>
-            </div>
-          </div>
-        </div>
-
-        <div id="tab02">
-          <div class="popupColsHolder">
-
-            <div class="col bgWhite">
-              <form class="popupHolderWrap center-block popupLarge popupLoginFrom" [formGroup]="registerForm" (ngSubmit)="onSubmit()">
-
-                <!-- Errors -->
-                <div *ngIf="errors?.name" class="alert alert-danger mt-3">
-                  {{ errors?.name }}
-                </div>
-                <div *ngIf="errors?.username" class="alert alert-danger mt-3">
-                  {{ errors?.username }}
-                </div>
-                <div *ngIf="errors?.email" class="alert alert-danger mt-3">
-                  {{ errors?.email }}
-                </div>
-                <div *ngIf="errors?.password" class="alert alert-danger mt-3">
-                  {{ errors?.password }}
-                </div>
-                <div *ngIf="errors?.password_confirmation" class="alert alert-danger mt-3">
-                  {{ errors?.password_confirmation }}
-                </div>
-
-
-                <div class="form-group">
-                <input type="text" class="form-control elemenBlock" placeholder="Full Name" formControlName="name">
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control elemenBlock" placeholder="User Name" formControlName="username">
-              </div>
-                <div class="form-group">
-                  <input type="email" class="form-control elemenBlock" placeholder="Email Address" formControlName="email">
-                </div>
-              <div class="form-group">
-                <input type="password" class="form-control elemenBlock" placeholder="Password" formControlName="password">
-              </div>
-              <div class="form-group">
-                <input type="password" class="form-control elemenBlock" placeholder="Confirm Password" formControlName="password_confirmation">
-              </div>
-
-
-              <button type="submit" class="btn btn-primary elemenBlock fontNeuron fwNormal text-uppercase btnSubmit">REGISTER</button>
-                </form>
-            </div>
-            <div class="col">
-              <p>You Can Login using your facebook Profile or Google account</p>
-              <button type="button" class="btnSocial btnFb elemenBlock"><i class="fab fa-facebook-f btnIco"></i> Facebook Connect</button>
-              <button type="button" class="btnSocial btnTw elemenBlock"><i class="fab fa-twitter btnIco"></i> Twitter Connect</button>
-              <button type="button" class="btnSocial btnG elemenBlock"><i class="fab fa-google btnIco"></i> Google Connect</button>
-            </div>
-          </div>
-        </div>
-      </div>
-  </div>
-  </div>

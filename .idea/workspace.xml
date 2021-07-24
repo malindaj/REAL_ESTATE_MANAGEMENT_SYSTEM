@@ -1,7 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/master" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="a10c29ad-f167-44b2-87a9-d106a8a884fe" name="Default Changelist" comment="" />
+    <list default="true" id="a10c29ad-f167-44b2-87a9-d106a8a884fe" name="Default Changelist" comment="register form">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/real-front/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/real-front/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/real-front/src/app/auth/login/login.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/real-front/src/app/auth/login/login.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/real-front/src/app/auth/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/real-front/src/app/auth/login/login.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/real-front/src/app/auth/register/register.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/real-front/src/app/auth/register/register.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/real-front/src/app/auth/register/register.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/real-front/src/app/auth/register/register.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/real-front/src/app/public/header/header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/real-front/src/app/public/header/header.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/real-front/src/app/public/header/header.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/real-front/src/app/public/header/header.component.ts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,7 +48,11 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/real-front/node_modules/typescript/lib" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -30,10 +64,59 @@
       <updated>1626880932386</updated>
       <workItem from="1626880935299" duration="201000" />
       <workItem from="1626920284943" duration="168000" />
+      <workItem from="1626973041705" duration="7932000" />
     </task>
+    <task id="LOCAL-00001" summary="register form">
+      <created>1626973088250</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1626973088250</updated>
+    </task>
+    <task id="LOCAL-00002" summary="register form">
+      <created>1626973098466</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1626973098466</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="register form" />
+    <option name="LAST_COMMIT_MESSAGE" value="register form" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="460" y="217" key="Vcs.Push.Dialog.v2" timestamp="1626973239556">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="460" y="217" key="Vcs.Push.Dialog.v2/0.-1024.1280.1024/0.0.1920.1080@0.0.1920.1080" timestamp="1626973239556" />
   </component>
 </project>
