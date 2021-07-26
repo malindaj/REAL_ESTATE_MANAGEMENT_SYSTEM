@@ -1,8 +1,8 @@
 export class User {
-  name: string;
-  email: string;
-  username: string;
-  role_id: number;
-  password: string;
-  password_confirmation: string;
+  name: String;
+  email: String;
+  role_id: number = 3;
+  image: String = 'default.png';
+  password: String;
+  password_confirmation: String;
 }

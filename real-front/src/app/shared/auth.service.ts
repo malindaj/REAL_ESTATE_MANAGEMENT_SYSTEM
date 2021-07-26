@@ -12,12 +12,14 @@ export class AuthService {
 
   // User registration
   register(user: User): Observable<any> {
-    return this.http.post('http://127.0.0.1:8000/api/auth/register', user);
+    user.role_id = 3;
+    user.image = 'defult';
+    return this.http.post('http://localhost:8000/api/auth/register', user);
   }
 
   // Login
   signin(user: User): Observable<any> {
-    return this.http.post<any>('http://127.0.0.1:8000/api/auth/login', user);
+    return this.http.post<any>('http://localhost:8000/api/auth/login', user);
   }
 
   // Access user profile

@@ -19,8 +19,7 @@ export class RegisterComponent implements OnInit {
     public authService: AuthService
   ) {
     this.registerForm = this.fb.group({
-      first_name: [''],
-      last_name: [''],
+      name: [''],
       email: [''],
       password: [''],
       password_confirmation: ['']
@@ -31,6 +30,7 @@ export class RegisterComponent implements OnInit {
   }
 
   onSubmit() {
+    console.log(this.registerForm.value);
     this.authService.register(this.registerForm.value).subscribe(
       result => {
         console.log(result);
