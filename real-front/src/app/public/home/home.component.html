@@ -4,7 +4,13 @@
   <section class="mapBannerBlock">
     <div class="map-area">
       <div id="map-container">
-        <div id="map_div">&nbsp;</div>
+        <div id="map_div"><google-map
+          height="500px"
+          width="100%"
+          [zoom]="zoom"
+          [center]="center"
+          [options]="options"
+        ></google-map></div>
       </div>
     </div>
     <div class="container holder">

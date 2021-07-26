@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { GoogleMapsModule } from '@angular/google-maps';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -16,6 +17,7 @@ import {HttpClientModule, HTTP_INTERCEPTORS} from '@angular/common/http';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { AuthInterceptor } from './shared/auth-interceptor.service';
 import { UserDashboardComponent } from './users/user-dashboard/user-dashboard.component';
+import { TestComponent } from './test/test.component';
 
 
 @NgModule({
@@ -30,7 +32,8 @@ import { UserDashboardComponent } from './users/user-dashboard/user-dashboard.co
     AgentDetailComponent,
     LoginComponent,
     RegisterComponent,
-    UserDashboardComponent
+    UserDashboardComponent,
+    TestComponent
   ],
   imports: [
     BrowserModule,
@@ -38,6 +41,7 @@ import { UserDashboardComponent } from './users/user-dashboard/user-dashboard.co
     HttpClientModule,
     ReactiveFormsModule,
     FormsModule,
+    GoogleMapsModule,
   ],
   providers: [
     {

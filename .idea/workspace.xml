@@ -22,19 +22,12 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a10c29ad-f167-44b2-87a9-d106a8a884fe" name="Default Changelist" comment="login connect api">
+    <list default="true" id="a10c29ad-f167-44b2-87a9-d106a8a884fe" name="Default Changelist" comment="before map">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/real-front/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/real-front/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/real-front/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/real-front/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/real-front/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/real-front/src/app/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/real-front/src/app/auth/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/real-front/src/app/auth/login/login.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/real-front/src/app/auth/register/register.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/real-front/src/app/auth/register/register.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/real-front/src/app/auth/register/register.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/real-front/src/app/auth/register/register.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/real-front/src/app/public/header/header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/real-front/src/app/public/header/header.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/real-front/src/app/public/header/header.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/real-front/src/app/public/header/header.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/real-front/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/real-front/src/app/app.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/real-front/src/app/public/home/home.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/real-front/src/app/public/home/home.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/real-front/src/app/shared/auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/real-front/src/app/shared/auth.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/real-front/src/app/shared/user.ts" beforeDir="false" afterPath="$PROJECT_DIR$/real-front/src/app/shared/user.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/real-front/src/app/public/home/home.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/real-front/src/app/public/home/home.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/real-front/src/assets/js/map2.js" beforeDir="false" afterPath="$PROJECT_DIR$/real-front/src/assets/js/map2.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/real-front/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/real-front/src/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -78,7 +71,7 @@
       <workItem from="1627091846932" duration="1977000" />
       <workItem from="1627097423227" duration="12217000" />
       <workItem from="1627131960245" duration="793000" />
-      <workItem from="1627272496668" duration="2619000" />
+      <workItem from="1627272496668" duration="6939000" />
     </task>
     <task id="LOCAL-00001" summary="register form">
       <created>1626973088250</created>
@@ -101,7 +94,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627092143161</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="before map">
+      <created>1627277578181</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1627277578181</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -134,13 +134,14 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="register form" />
     <MESSAGE value="login connect api" />
-    <option name="LAST_COMMIT_MESSAGE" value="login connect api" />
+    <MESSAGE value="before map" />
+    <option name="LAST_COMMIT_MESSAGE" value="before map" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="460" y="217" key="Vcs.Push.Dialog.v2" timestamp="1627092353186">
+    <state x="460" y="217" key="Vcs.Push.Dialog.v2" timestamp="1627277587720">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="460" y="217" key="Vcs.Push.Dialog.v2/0.-1024.1280.1024/0.0.1920.1080@0.0.1920.1080" timestamp="1627092353186" />
+    <state x="460" y="217" key="Vcs.Push.Dialog.v2/0.-1024.1280.1024/0.0.1920.1080@0.0.1920.1080" timestamp="1627277587720" />
     <state x="541" y="252" key="run.anything.popup" timestamp="1627126569312">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
