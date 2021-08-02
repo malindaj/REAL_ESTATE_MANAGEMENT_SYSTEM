@@ -74,7 +74,7 @@ class AdminPropertyController extends Controller
 
         $property = new Property();
         $property->title = $request->title;
-        $property->slug = $slug;
+
         $property->price = $request->price;
         $property->purpose = $request->purpose;
         $property->type = $request->type;
@@ -82,7 +82,7 @@ class AdminPropertyController extends Controller
         $property->bedroom = $request->bedroom;
         $property->bathroom = $request->bathroom;
         $property->city = $request->city;
-        $property->city_slug = str_slug($request->city);
+
         $property->address = $request->address;
         $property->area = $request->area;
 
@@ -108,7 +108,7 @@ class AdminPropertyController extends Controller
 
         return response()->json([
             'success' => true,
-            'message' => "admin prperty",
+            'message' => "admin prpperty",
             'data' => $property
         ]);
     }
@@ -175,7 +175,7 @@ class AdminPropertyController extends Controller
         }
 
         $property->title = $request->title;
-        $property->slug = $slug;
+
         $property->price = $request->price;
         $property->purpose = $request->purpose;
         $property->type = $request->type;
@@ -183,7 +183,7 @@ class AdminPropertyController extends Controller
         $property->bedroom = $request->bedroom;
         $property->bathroom = $request->bathroom;
         $property->city = $request->city;
-        $property->city_slug = str_slug($request->city);
+
         $property->address = $request->address;
         $property->area = $request->area;
 
@@ -197,7 +197,7 @@ class AdminPropertyController extends Controller
 
         return response()->json([
             'success' => true,
-            'message' => "admin prperty",
+            'message' => "admin property",
             'data' => $property
         ]);
     }

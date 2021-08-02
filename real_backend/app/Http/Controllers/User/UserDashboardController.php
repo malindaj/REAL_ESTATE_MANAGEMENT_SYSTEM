@@ -22,13 +22,13 @@ class UserDashboardController extends Controller
             "message" => " successfully.",
             "data" => $profile
         ]);
+//        return response()->json(auth()->user());
     }
 
     public function profileUpdate(Request $request)
     {
         $request->validate([
             'name' => 'required',
-            'username' => 'required',
             'email' => 'required|email',
             'image' => 'image|mimes:jpeg,jpg,png',
 
@@ -54,7 +54,6 @@ class UserDashboardController extends Controller
         }
 
         $user->name = $request->name;
-        $user->username = $request->username;
         $user->email = $request->email;
         $user->image = $imagename;
 

@@ -20,7 +20,7 @@ class AgentPropertyController extends Controller
 
         return response()->json([
         'success' => true,
-        'message'=> "agent prodcts",
+        'message'=> "agent property",
         'data'=> $properties
         ]);
     }
@@ -35,66 +35,30 @@ class AgentPropertyController extends Controller
             'bedroom'   => 'required',
             'bathroom'  => 'required',
             'city'      => 'required',
-            'address'   => 'required',
             'area'      => 'required',
-            'image'     => 'required|image|mimes:jpeg,jpg,png',
-            'floor_plan'=> 'image|mimes:jpeg,jpg,png',
             'description'        => 'required',
-            'location_latitude'  => 'required',
-            'location_longitude' => 'required',
+
         ]);
 
-        $image = $request->file('image');
-        $slug  = str_slug($request->title);
-
-        if(isset($image)){
-            $currentDate = Carbon::now()->toDateString();
-            $imagename = $slug.'-'.$currentDate.'-'.uniqid().'.'.$image->getClientOriginalExtension();
-
-            if(!Storage::disk('public')->exists('property')){
-                Storage::disk('public')->makeDirectory('property');
-            }
-            $propertyimage = Image::make($image)->stream();
-            Storage::disk('public')->put('property/'.$imagename, $propertyimage);
-
-        }
-
-        $floor_plan = $request->file('floor_plan');
-        if(isset($floor_plan)){
-            $currentDate = Carbon::now()->toDateString();
-            $imagefloorplan = 'floor-plan-'.$currentDate.'-'.uniqid().'.'.$floor_plan->getClientOriginalExtension();
-
-            if(!Storage::disk('public')->exists('property')){
-                Storage::disk('public')->makeDirectory('property');
-            }
-            $propertyfloorplan = Image::make($floor_plan)->stream();
-            Storage::disk('public')->put('property/'.$imagefloorplan, $propertyfloorplan);
-
-        }else{
-            $imagefloorplan = 'default.png';
-        }
 
         $property = new Property();
         $property->title    = $request->title;
-        $property->slug     = $slug;
         $property->price    = $request->price;
         $property->purpose  = $request->purpose;
         $property->type     = $request->type;
-        $property->image    = $imagename;
+        $property->image    = $request->image;
+        $property->image2    = $request->image2;
+        $property->image3    = $request->image3;
         $property->bedroom  = $request->bedroom;
         $property->bathroom = $request->bathroom;
         $property->city     = $request->city;
-        $property->city_slug= str_slug($request->city);
         $property->address  = $request->address;
         $property->area     = $request->area;
 
         $property->agent_id           = Auth::id();
-        $property->video              = $request->video;
-        $property->floor_plan         = $imagefloorplan;
+
+        $property->floor_plan         = $request->floor_plan;
         $property->description        = $request->description;
-        $property->location_latitude  = $request->location_latitude;
-        $property->location_longitude = $request->location_longitude;
-        $property->nearby             = $request->nearby;
         $property->save();
 
         return response()->json([
@@ -166,7 +130,6 @@ class AgentPropertyController extends Controller
         }
 
         $property->title = $request->title;
-        $property->slug = $slug;
         $property->price = $request->price;
         $property->purpose = $request->purpose;
         $property->type = $request->type;
@@ -174,7 +137,6 @@ class AgentPropertyController extends Controller
         $property->bedroom = $request->bedroom;
         $property->bathroom = $request->bathroom;
         $property->city = $request->city;
-        $property->city_slug = str_slug($request->city);
         $property->address = $request->address;
         $property->area = $request->area;
 

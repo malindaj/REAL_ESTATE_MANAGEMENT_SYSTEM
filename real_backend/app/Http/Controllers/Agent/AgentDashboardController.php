@@ -22,7 +22,7 @@ class AgentDashboardController extends Controller
 
         return response()->json([
             'success' => true,
-            'message'=> "agent prperty",
+            'message'=> "agent property",
             'data'=> [
                 'properties' => $properties,
                 'propertytotal' =>$propertytotal
@@ -45,35 +45,25 @@ class AgentDashboardController extends Controller
     {
         $request->validate([
             'name' => 'required',
-            'username' => 'required',
             'email' => 'required|email',
-            'image' => 'image|mimes:jpeg,jpg,png',
 
         ]);
 
         $user = User::find(Auth::id());
 
-        $image = $request->file('image');
-        $slug = str_slug($request->name);
 
-        if (isset($image)) {
-            $currentDate = Carbon::now()->toDateString();
-            $imagename = $slug . '-agent-' . Auth::id() . '-' . $currentDate . '.' . $image->getClientOriginalExtension();
+        if ($request->file('image')) {
+            $imagePath = $request->file('image');
+            $imageName = $imagePath->getClientOriginalName();
 
-            if (!Storage::disk('public')->exists('users')) {
-                Storage::disk('public')->makeDirectory('users');
-            }
-            if (Storage::disk('public')->exists('users/' . $user->image) && $user->image != 'default.png') {
-                Storage::disk('public')->delete('users/' . $user->image);
-            }
-            $userimage = Image::make($image)->stream();
-            Storage::disk('public')->put('users/' . $imagename, $userimage);
+            $path = $request->file('image')->storeAs('uploads', $imageName, 'public');
         }
 
         $user->name = $request->name;
-        $user->username = $request->username;
+        $user->bio = $request->bio;
+        $user->phone_number= $request->phone_number;
         $user->email = $request->email;
-        $user->image = $imagename;
+        $user->image = '/storage/'.$path;
 
 
         $user->save();
