@@ -11,11 +11,12 @@ class PageController extends Controller
     public function allProperties(){
         $properties = Property::all();
 
-        return response()->json([
-            'success' => true,
-            'message'=> "property List",
-            'data'=> $properties
-        ]);
+//        return response()->json([
+//            'success' => true,
+//            'message'=> "property List",
+//            'data'=> $properties
+//        ]);
+        return response()->json($properties);
     }
 
     public function showProperty ($id){
@@ -32,13 +33,9 @@ class PageController extends Controller
     }
 
     public function agents(){
-        $agents = User::latest()->where('role_id', 2)->paginate(12);
+        $agents = User::all()->where('role_id', 2);
 
-        return response()->json([
-            'success' => true,
-            'message'=> "agent List",
-            'data'=> $agents
-        ]);
+        return response()->json($agents);
     }
     public function agentshow($id)
     {
@@ -48,7 +45,48 @@ class PageController extends Controller
         return response()->json([
             'success' => true,
             'message'=> "agent property",
-            'data'=> $properties
+            'property'=> $properties,
+            'agent' => $agent
         ]);
     }
+
+public function search(Request $request)
+{
+    $city     = strtolower($request->city);
+    $type     = $request->type;
+    $purpose  = $request->purpose;
+    $bedroom  = $request->bedroom;
+    $bathroom = $request->bathroom;
+    $minprice = $request->minprice;
+    $maxprice = $request->maxprice;
+
+    $properties = Property::latest()->when($city, function ($query, $city) {
+            return $query->where('city', '=', $city);
+        })
+        ->when($type, function ($query, $type) {
+            return $query->where('type', '=', $type);
+        })
+        ->when($purpose, function ($query, $purpose) {
+            return $query->where('purpose', '=', $purpose);
+        })
+        ->when($bedroom, function ($query, $bedroom) {
+            return $query->where('bedroom', '=', $bedroom);
+        })
+        ->when($bathroom, function ($query, $bathroom) {
+            return $query->where('bathroom', '=', $bathroom);
+        })
+        ->when($minprice, function ($query, $minprice) {
+            return $query->where('price', '>=', $minprice);
+        })
+        ->when($maxprice, function ($query, $maxprice) {
+            return $query->where('price', '<=', $maxprice);
+        })
+        ->paginate(10);
+
+    return response()->json([
+        'success' => true,
+        'message'=> "search property",
+        'data'=> $properties
+    ]);
+}
 }
