@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { GoogleMapsModule } from '@angular/google-maps';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -16,6 +17,15 @@ import {HttpClientModule, HTTP_INTERCEPTORS} from '@angular/common/http';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { AuthInterceptor } from './shared/auth-interceptor.service';
 import { UserDashboardComponent } from './users/user-dashboard/user-dashboard.component';
+import { TestComponent } from './test/test.component';
+import { Step1Component } from './public/layouts/property/add-property/step1/step1.component';
+import { Step2Component } from './public/layouts/property/add-property/step2/step2.component';
+import { Step3Component } from './public/layouts/property/add-property/step3/step3.component';
+import { Step4Component } from './public/layouts/property/add-property/step4/step4.component';
+import { Step5Component } from './public/layouts/property/add-property/step5/step5.component';
+import { SearchComponent } from './public/search/search.component';
+import { AboutComponent } from './public/pages/about/about.component';
+import { ContactComponent } from './public/pages/contact/contact.component';
 
 
 @NgModule({
@@ -30,7 +40,16 @@ import { UserDashboardComponent } from './users/user-dashboard/user-dashboard.co
     AgentDetailComponent,
     LoginComponent,
     RegisterComponent,
-    UserDashboardComponent
+    UserDashboardComponent,
+    TestComponent,
+    Step1Component,
+    Step2Component,
+    Step3Component,
+    Step4Component,
+    Step5Component,
+    SearchComponent,
+    AboutComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
@@ -38,6 +57,7 @@ import { UserDashboardComponent } from './users/user-dashboard/user-dashboard.co
     HttpClientModule,
     ReactiveFormsModule,
     FormsModule,
+    GoogleMapsModule,
   ],
   providers: [
     {

@@ -11,7 +11,7 @@ import {AuthStateService} from '../../shared/auth-state.service';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-  isSignedIn: boolean = true;
+  isSignedIn: boolean;
 
   constructor(
     private auth: AuthStateService,

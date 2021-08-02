@@ -30,16 +30,20 @@ export class LoginComponent implements OnInit {
   }
 
   onSubmit() {
+    console.log(this.loginForm.value);
     this.authService.signin(this.loginForm.value).subscribe(
       result => {
+        console.log('malinda');
+        console.log(result);
         this.responseHandler(result);
       },
       error => {
         this.errors = error.error;
+        console.log(error);
       },() => {
         this.authState.setAuthState(true);
         this.loginForm.reset();
-        this.router.navigate(['home']);
+        this.router.navigate(['user-dashboard']);
       }
     );
   }
@@ -47,6 +51,7 @@ export class LoginComponent implements OnInit {
   // Handle response
   responseHandler(data){
     this.token.handleData(data.access_token);
+    console.log(data);
   }
 
 }

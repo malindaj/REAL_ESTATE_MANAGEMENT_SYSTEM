@@ -214,16 +214,16 @@
       </div>
     </header>
     <div class="row">
-      <div class="col-xs-12 col-sm-6 col-md-3">
+      <div *ngFor="let agent  of agentList" class="col-xs-12 col-sm-6 col-md-3">
         <!-- profileColumn -->
         <article class="profileColumn hasOver style2">
           <div class="aligncenter">
-            <a href="agent-detail.html">
-              <img src="https://via.placeholder.com/265x260" alt="Veronica Green Sales Executive">
+            <a [routerLink]="['/agent-detail',agent.id]">
+              <img [src]="baseUrl+agent.image" alt="Veronica Green Sales Executive">
             </a>
           </div>
           <div class="textWrap bgWhite">
-            <h2 class="fontNeuron text-capitalize"><a href="agent-detail.html">Veronica Green</a></h2>
+            <h2 class="fontNeuron text-capitalize"><a [routerLink]="['/agent-detail',agent.id]">{{agent.name}}</a></h2>
             <h3 class="fwNormal text-capitalize">Sales Executive</h3>
             <div class="collapseWrap">
               <!-- profileColumnSocial -->
@@ -237,167 +237,7 @@
           </div>
         </article>
       </div>
-      <div class="col-xs-12 col-sm-6 col-md-3">
-        <!-- profileColumn -->
-        <article class="profileColumn hasOver style2">
-          <div class="aligncenter">
-            <a href="agent-detail.html">
-              <img src="https://via.placeholder.com/265x260" alt="Veronica Green Sales Executive">
-            </a>
-          </div>
-          <div class="textWrap bgWhite">
-            <h2 class="fontNeuron text-capitalize"><a href="agent-detail.html">Guti Salvio</a></h2>
-            <h3 class="fwNormal text-capitalize">Real Estate Broker</h3>
-            <div class="collapseWrap">
-              <!-- profileColumnSocial -->
-              <ul class="list-unstyled socialNetworks profileColumnSocial">
-                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                <li><a href="#"><i class="fab fa-google"></i></a></li>
-              </ul>
-            </div>
-          </div>
-        </article>
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-3">
-        <!-- profileColumn -->
-        <article class="profileColumn hasOver style2">
-          <div class="aligncenter">
-            <a href="agent-detail.html">
-              <img src="https://via.placeholder.com/265x260" alt="Veronica Green Sales Executive">
-            </a>
-          </div>
-          <div class="textWrap bgWhite">
-            <h2 class="fontNeuron text-capitalize"><a href="agent-detail.html">Elenia Jesse</a></h2>
-            <h3 class="fwNormal text-capitalize">Selling Agent</h3>
-            <div class="collapseWrap">
-              <!-- profileColumnSocial -->
-              <ul class="list-unstyled socialNetworks profileColumnSocial">
-                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                <li><a href="#"><i class="fab fa-google"></i></a></li>
-              </ul>
-            </div>
-          </div>
-        </article>
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-3">
-        <!-- profileColumn -->
-        <article class="profileColumn hasOver style2">
-          <div class="aligncenter">
-            <a href="agent-detail.html">
-              <img src="https://via.placeholder.com/265x260" alt="Veronica Green Sales Executive">
-            </a>
-          </div>
-          <div class="textWrap bgWhite">
-            <h2 class="fontNeuron text-capitalize"><a href="agent-detail.html">Emmy Ramos</a></h2>
-            <h3 class="fwNormal text-capitalize">Buying Agent</h3>
-            <div class="collapseWrap">
-              <!-- profileColumnSocial -->
-              <ul class="list-unstyled socialNetworks profileColumnSocial">
-                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                <li><a href="#"><i class="fab fa-google"></i></a></li>
-              </ul>
-            </div>
-          </div>
-        </article>
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-3">
-        <!-- profileColumn -->
-        <article class="profileColumn hasOver style2">
-          <div class="aligncenter">
-            <a href="agent-detail.html">
-              <img src="https://via.placeholder.com/265x260" alt="Veronica Green Sales Executive">
-            </a>
-          </div>
-          <div class="textWrap bgWhite">
-            <h2 class="fontNeuron text-capitalize"><a href="agent-detail.html">Veronica Green</a></h2>
-            <h3 class="fwNormal text-capitalize">Sales Executive</h3>
-            <div class="collapseWrap">
-              <!-- profileColumnSocial -->
-              <ul class="list-unstyled socialNetworks profileColumnSocial">
-                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                <li><a href="#"><i class="fab fa-google"></i></a></li>
-              </ul>
-            </div>
-          </div>
-        </article>
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-3">
-        <!-- profileColumn -->
-        <article class="profileColumn hasOver style2">
-          <div class="aligncenter">
-            <a href="agent-detail.html">
-              <img src="https://via.placeholder.com/265x260" alt="Veronica Green Sales Executive">
-            </a>
-          </div>
-          <div class="textWrap bgWhite">
-            <h2 class="fontNeuron text-capitalize"><a href="agent-detail.html">Guti Salvio</a></h2>
-            <h3 class="fwNormal text-capitalize">Real Estate Broker</h3>
-            <div class="collapseWrap">
-              <!-- profileColumnSocial -->
-              <ul class="list-unstyled socialNetworks profileColumnSocial">
-                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                <li><a href="#"><i class="fab fa-google"></i></a></li>
-              </ul>
-            </div>
-          </div>
-        </article>
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-3">
-        <!-- profileColumn -->
-        <article class="profileColumn hasOver style2">
-          <div class="aligncenter">
-            <a href="agent-detail.html">
-              <img src="https://via.placeholder.com/265x260" alt="Veronica Green Sales Executive">
-            </a>
-          </div>
-          <div class="textWrap bgWhite">
-            <h2 class="fontNeuron text-capitalize"><a href="agent-detail.html">Emmy Ramos</a></h2>
-            <h3 class="fwNormal text-capitalize">Buying Agent</h3>
-            <div class="collapseWrap">
-              <!-- profileColumnSocial -->
-              <ul class="list-unstyled socialNetworks profileColumnSocial">
-                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                <li><a href="#"><i class="fab fa-google"></i></a></li>
-              </ul>
-            </div>
-          </div>
-        </article>
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-3">
-        <!-- profileColumn -->
-        <article class="profileColumn hasOver style2">
-          <div class="aligncenter">
-            <a href="agent-detail.html">
-              <img src="https://via.placeholder.com/265x260" alt="Veronica Green Sales Executive">
-            </a>
-          </div>
-          <div class="textWrap bgWhite">
-            <h2 class="fontNeuron text-capitalize"><a href="agent-detail.html">Emmy Ramos</a></h2>
-            <h3 class="fwNormal text-capitalize">Buying Agent</h3>
-            <div class="collapseWrap">
-              <!-- profileColumnSocial -->
-              <ul class="list-unstyled socialNetworks profileColumnSocial">
-                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                <li><a href="#"><i class="fab fa-google"></i></a></li>
-              </ul>
-            </div>
-          </div>
-        </article>
-      </div>
+
     </div>
   </section>
   <!-- signupFormAside -->

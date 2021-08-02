@@ -25,8 +25,22 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a10c29ad-f167-44b2-87a9-d106a8a884fe" name="Default Changelist" comment="final state backed">
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+
+    <list default="true" id="a10c29ad-f167-44b2-87a9-d106a8a884fe" name="Default Changelist" comment="frontend ed finish">
+      <change afterPath="$PROJECT_DIR$/real-front/src/app/public/pages/about/about.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/real-front/src/app/public/pages/about/about.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/real-front/src/app/public/pages/about/about.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/real-front/src/app/public/pages/about/about.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/real-front/src/app/public/pages/contact/contact.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/real-front/src/app/public/pages/contact/contact.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/real-front/src/app/public/pages/contact/contact.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/real-front/src/app/public/pages/contact/contact.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/real-front/src/assets/images/about.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/real-front/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/real-front/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/real-front/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/real-front/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/real-front/src/app/public/header/header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/real-front/src/app/public/header/header.component.html" afterDir="false" />
+
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,42 +51,9 @@
     <execution />
   </component>
   <component name="Git.Settings">
-    <excluded-from-favorite>
-      <branch-storage>
-        <map>
-          <entry type="LOCAL">
-            <value>
-              <list>
-                <branch-info repo="$PROJECT_DIR$" source="master" />
-              </list>
-            </value>
-          </entry>
-          <entry type="REMOTE">
-            <value>
-              <list>
-                <branch-info repo="$PROJECT_DIR$" source="origin/master" />
-              </list>
-            </value>
-          </entry>
-        </map>
-      </branch-storage>
-    </excluded-from-favorite>
-    <favorite-branches>
-      <branch-storage>
-        <map>
-          <entry type="LOCAL">
-            <value>
-              <list>
-                <branch-info repo="$PROJECT_DIR$" source="final-backend" />
-              </list>
-            </value>
-          </entry>
-        </map>
-      </branch-storage>
-    </favorite-branches>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="new-backend" />
+        <entry key="$PROJECT_DIR$" value="frontend" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -198,12 +179,16 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1vd97M3hrNc4NhoQ3FdFvKXM93i" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -213,10 +198,13 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/real-front/node_modules/typescript/lib" />
   </component>
-  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
-  <component name="SvnConfiguration">
-    <configuration />
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/real-front/src/assets/images" />
+      <recent name="$PROJECT_DIR$/real-front/src/assets/p1" />
+    </key>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="a10c29ad-f167-44b2-87a9-d106a8a884fe" name="Default Changelist" comment="" />
@@ -227,6 +215,15 @@
       <workItem from="1626880935299" duration="201000" />
       <workItem from="1626920284943" duration="168000" />
       <workItem from="1626973041705" duration="7932000" />
+      <workItem from="1627091846932" duration="1977000" />
+      <workItem from="1627097423227" duration="12217000" />
+      <workItem from="1627131960245" duration="793000" />
+      <workItem from="1627272496668" duration="7246000" />
+      <workItem from="1627440848579" duration="18290000" />
+      <workItem from="1627498670594" duration="12811000" />
+      <workItem from="1627557157662" duration="5496000" />
+      <workItem from="1627746302214" duration="137000" />
+      <workItem from="1627810564053" duration="51531000" />
     </task>
     <task id="LOCAL-00001" summary="register form">
       <created>1626973088250</created>
@@ -242,14 +239,35 @@
       <option name="project" value="LOCAL" />
       <updated>1626973098466</updated>
     </task>
-    <task id="LOCAL-00003" summary="final state backed">
-      <created>1627911778683</created>
+    <task id="LOCAL-00003" summary="login connect api">
+      <created>1627092143161</created>
       <option name="number" value="00003" />
       <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
-      <updated>1627911778683</updated>
+      <updated>1627092143161</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="before map">
+      <created>1627277578181</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1627277578181</updated>
+    </task>
+    <task id="LOCAL-00005" summary="change-map">
+      <created>1627300531112</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1627300531112</updated>
+    </task>
+    <task id="LOCAL-00006" summary="frontend ed finish">
+      <created>1627908115540</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1627908115540</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -280,14 +298,27 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="register form" />
-    <MESSAGE value="final state backed" />
-    <option name="LAST_COMMIT_MESSAGE" value="final state backed" />
+    <MESSAGE value="login connect api" />
+    <MESSAGE value="before map" />
+    <MESSAGE value="change map" />
+    <MESSAGE value="change-map" />
+    <MESSAGE value="frontend ed finish" />
+    <option name="LAST_COMMIT_MESSAGE" value="frontend ed finish" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="460" y="217" key="Vcs.Push.Dialog.v2" timestamp="1626973239556">
+    <state x="460" y="217" key="Vcs.Push.Dialog.v2" timestamp="1627908133869">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="460" y="217" key="Vcs.Push.Dialog.v2/0.-1024.1280.1024/0.0.1920.1080@0.0.1920.1080" timestamp="1626973239556" />
+    <state x="460" y="217" key="Vcs.Push.Dialog.v2/0.-1024.1280.1024/0.0.1920.1080@0.0.1920.1080" timestamp="1627908133869" />
+    <state width="750" height="535" key="javadoc.popup" timestamp="1627480525593">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="750" height="535" key="javadoc.popup/0.-1024.1280.1024/0.0.1920.1080@0.0.1920.1080" timestamp="1627480525593" />
+    <state x="541" y="252" key="run.anything.popup" timestamp="1627126569312">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="541" y="252" key="run.anything.popup/0.-1024.1280.1024/0.0.1920.1080@0.0.1920.1080" timestamp="1627126569312" />
   </component>
 </project>

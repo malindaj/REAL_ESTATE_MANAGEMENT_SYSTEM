@@ -221,22 +221,21 @@
             <div class="accountHolder">
               <div class="imgProfile">
                 <div class="imgThumbnail">
-                  <img src="https://via.placeholder.com/320x340" alt="image description">
+                  <img [src]="baseUrl+agent.image" alt="image description">
                 </div>
               </div>
               <div class="accountContent">
-                <strong class="title fontNeuron">Jennie Wilson</strong>
-                <span class="sub-title">Sales Executive</span>
-                <p>Ut euismod ultricies sollicitudin. Curabitur sed dapibus neque. Nam in mauris quis libero sodales eleifend. tristique turpis, et iaculis mi tortor finibus.</p>
+                <strong class="title fontNeuron">{{agent.name}}</strong>
+                <p>{{agent.bio}}</p>
                 <div class="contactInfo">
                   <address class="adr">
                     <div class="item">
                       <i class="fi flaticon-24-hours"></i>
-                      <span class="text"><a href="tel:+12463450695">+1 246-345-0695</a></span>
+                      <span class="text"><a href="tel:+12463450695">{{agent.phone_number}}</a></span>
                     </div>
                     <div class="item">
                       <i class="fi flaticon-mail"></i>
-                      <span class="text"><a href="mailto:info@LemanHouse.com">info@LemanHouse.com</a></span>
+                      <span class="text"><a href="mailto:info@LemanHouse.com">{{agent.email}}</a></span>
                     </div>
                   </address>
                 </div>
@@ -256,10 +255,7 @@
               <div class="head">
                 <h4 class="fontNeuron">Biography</h4>
               </div>
-              <p>Emmy also enjoys spending time with her 2 King Charles Cavalier Spaniels, participating in Motocross events with Tye as well as sponsoring local community events.</p>
-              <p>– 2015 Real Estate Results Network – Boutique Principal of the Year – Winner</p>
-              <p>– 2015 Real Estate Results Network – QLD Agent of the Year – Winner</p>
-              <p>– 2015 Real Estate Results Network – Regional Boutique Agency of the Year – Winner</p>
+              <p>{{agent.bio}}</p>
             </form>
           </div>
           <header class="row rowHead rowHead2">
@@ -272,28 +268,15 @@
               </ul>
             </div>
           </header>
+          <div *ngFor="let property of properties">
           <article class="postColumn__ListView hasOver bgWhite">
             <div class="alignleft noShrink">
               <!-- postColumnImageSlider -->
-              <div class="slick-carousel slickSlider postColumnImageSlider">
+              <div class="">
                 <div>
                   <div class="imgHolder">
-                    <a href="#">
-                      <img src="https://via.placeholder.com/255x200" alt="image description">
-                    </a>
-                  </div>
-                </div>
-                <div>
-                  <div class="imgHolder">
-                    <a href="#">
-                      <img src="https://via.placeholder.com/255x200" alt="image description">
-                    </a>
-                  </div>
-                </div>
-                <div>
-                  <div class="imgHolder">
-                    <a href="#">
-                      <img src="https://via.placeholder.com/255x200" alt="image description">
+                    <a [routerLink]="['/property-detail',property.id]">
+                      <img [src]="baseUrl+'/storage/images/'+property.image" alt="image description">
                     </a>
                   </div>
                 </div>
@@ -316,205 +299,44 @@
               <a href="#" class="linkToFavourite roundedCircle bg-primary textWhite icnHeartBeatAnim"><i class="far fa-heart"></i></a>
             </div>
             <div class="descrWrap">
-              <h2 class="fontNeuron text-capitalize"><a href="properties-single1.html">Elegant studio flat</a></h2>
+              <h2 class="fontNeuron text-capitalize"><a [routerLink]="['/property-detail',property.id]">{{property.title}}</a></h2>
               <address>
                 <span class="icn"><i class="fi flaticon-pin-1"></i></span>
-                <p>The Village, Jersey City, NJ 07302, USA </p>
+                <p>{{property.city}} </p>
               </address>
               <div class="stampWrap">
-                <span class="btn btnSmall btn-success text-capitalize">For Sale</span>
-                <time datetime="2011-01-12" class="timing">1 day ago</time>
+                <span class="btn btnSmall btn-success text-capitalize">{{property.purpose}}</span>
+                <time datetime="2011-01-12" class="timing">{{property.updated_at | date}}</time>
               </div>
               <div class="priceWrap">
-                <h3 class="fontNeuron fwSemi"><span class="textSecondary">$ 490,000</span> <span class="textUnit fwNormal">/ monthly</span></h3>
+                <h3 class="fontNeuron fwSemi"><span class="textSecondary">Rs {{property.price}}</span> <span class="textUnit fwNormal"></span></h3>
                 <!-- linkDistributer -->
-                <a href="#" class="linkDistributer text-capitalize hidden-xs-ph"><i class="distributerIcn fi flaticon-social"></i> ali tufan</a>
+                <a href="#" class="linkDistributer text-capitalize hidden-xs-ph"><i class="distributerIcn fi flaticon-social"></i> {{agent.name}}</a>
               </div>
               <!-- postColumnFoot -->
               <footer class="postColumnFoot">
                 <ul class="list-unstyled">
                   <li>
                     <strong class="fwNormal elemenBlock text-primary">Area</strong>
-                    <strong class="fwNormal elemenBlock">2100 m2</strong>
+                    <strong class="fwNormal elemenBlock">{{property.area}}</strong>
                   </li>
                   <li>
                     <strong class="fwNormal elemenBlock text-primary">Beds</strong>
-                    <strong class="fwNormal elemenBlock">3</strong>
+                    <strong class="fwNormal elemenBlock">{{property.bedroom}}</strong>
                   </li>
                   <li>
                     <strong class="fwNormal elemenBlock text-primary">Baths</strong>
-                    <strong class="fwNormal elemenBlock">2</strong>
+                    <strong class="fwNormal elemenBlock">{{property.bathroom}}</strong>
                   </li>
                   <li>
                     <strong class="fwNormal elemenBlock text-primary">Garages</strong>
-                    <strong class="fwNormal elemenBlock">1</strong>
+                    <strong class="fwNormal elemenBlock">{{property.garages}}</strong>
                   </li>
                 </ul>
               </footer>
             </div>
           </article>
-          <article class="postColumn__ListView hasOver bgWhite">
-            <div class="alignleft noShrink">
-              <!-- postColumnImageSlider -->
-              <div class="slick-carousel slickSlider postColumnImageSlider">
-                <div>
-                  <div class="imgHolder">
-                    <a href="#">
-                      <img src="https://via.placeholder.com/255x200" alt="image description">
-                    </a>
-                  </div>
-                </div>
-                <div>
-                  <div class="imgHolder">
-                    <a href="#">
-                      <img src="https://via.placeholder.com/255x200" alt="image description">
-                    </a>
-                  </div>
-                </div>
-                <div>
-                  <div class="imgHolder">
-                    <a href="#">
-                      <img src="https://via.placeholder.com/255x200" alt="image description">
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <!-- postHoverLinskList -->
-              <ul class="list-unstyled postHoverLinskList">
-                <li><a href="#"><i class="fi flaticon-repeat"></i></a></li>
-                <li class="hasOver">
-                  <a href="#"><i class="fi flaticon-share"></i></a>
-                  <!-- postColumnSocial -->
-                  <ul class="list-unstyled socialNetworks postColumnSocial">
-                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                    <li><a href="#"><i class="fab fa-google"></i></a></li>
-                  </ul>
-                </li>
-              </ul>
-              <!-- linkToFavourite -->
-              <a href="#" class="linkToFavourite roundedCircle bg-primary textWhite icnHeartBeatAnim"><i class="far fa-heart"></i></a>
-            </div>
-            <div class="descrWrap">
-              <h2 class="fontNeuron text-capitalize"><a href="properties-single1.html">4 Bedroom New House For Sale</a></h2>
-              <address>
-                <span class="icn"><i class="fi flaticon-pin-1"></i></span>
-                <p>The Village, Jersey City, NJ 07302, USA </p>
-              </address>
-              <div class="stampWrap">
-                <span class="btn btnSmall btn-success text-capitalize">For Sale</span>
-                <time datetime="2011-01-12" class="timing">1 day ago</time>
-              </div>
-              <div class="priceWrap">
-                <h3 class="fontNeuron fwSemi"><span class="textSecondary">$ 490,000</span> <span class="textUnit fwNormal">/ monthly</span></h3>
-                <!-- linkDistributer -->
-                <a href="#" class="linkDistributer text-capitalize hidden-xs-ph"><i class="distributerIcn fi flaticon-social"></i> ali tufan</a>
-              </div>
-              <!-- postColumnFoot -->
-              <footer class="postColumnFoot">
-                <ul class="list-unstyled">
-                  <li>
-                    <strong class="fwNormal elemenBlock text-primary">Area</strong>
-                    <strong class="fwNormal elemenBlock">2100 m2</strong>
-                  </li>
-                  <li>
-                    <strong class="fwNormal elemenBlock text-primary">Beds</strong>
-                    <strong class="fwNormal elemenBlock">3</strong>
-                  </li>
-                  <li>
-                    <strong class="fwNormal elemenBlock text-primary">Baths</strong>
-                    <strong class="fwNormal elemenBlock">2</strong>
-                  </li>
-                  <li>
-                    <strong class="fwNormal elemenBlock text-primary">Garages</strong>
-                    <strong class="fwNormal elemenBlock">1</strong>
-                  </li>
-                </ul>
-              </footer>
-            </div>
-          </article>
-          <article class="postColumn__ListView hasOver bgWhite">
-            <div class="alignleft noShrink">
-              <!-- postColumnImageSlider -->
-              <div class="slick-carousel slickSlider postColumnImageSlider">
-                <div>
-                  <div class="imgHolder">
-                    <a href="#">
-                      <img src="https://via.placeholder.com/255x200" alt="image description">
-                    </a>
-                  </div>
-                </div>
-                <div>
-                  <div class="imgHolder">
-                    <a href="#">
-                      <img src="https://via.placeholder.com/255x200" alt="image description">
-                    </a>
-                  </div>
-                </div>
-                <div>
-                  <div class="imgHolder">
-                    <a href="#">
-                      <img src="https://via.placeholder.com/255x200" alt="image description">
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <!-- postHoverLinskList -->
-              <ul class="list-unstyled postHoverLinskList">
-                <li><a href="#"><i class="fi flaticon-repeat"></i></a></li>
-                <li class="hasOver">
-                  <a href="#"><i class="fi flaticon-share"></i></a>
-                  <!-- postColumnSocial -->
-                  <ul class="list-unstyled socialNetworks postColumnSocial">
-                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                    <li><a href="#"><i class="fab fa-google"></i></a></li>
-                  </ul>
-                </li>
-              </ul>
-              <!-- linkToFavourite -->
-              <a href="#" class="linkToFavourite roundedCircle bg-primary textWhite icnHeartBeatAnim"><i class="far fa-heart"></i></a>
-            </div>
-            <div class="descrWrap">
-              <h2 class="fontNeuron text-capitalize"><a href="properties-single1.html">Villa on Hollywood Boulevard </a></h2>
-              <address>
-                <span class="icn"><i class="fi flaticon-pin-1"></i></span>
-                <p>The Village, Jersey City, NJ 07302, USA </p>
-              </address>
-              <div class="stampWrap">
-                <span class="btn btnSmall btn-success text-capitalize">For Sale</span>
-                <time datetime="2011-01-12" class="timing">1 day ago</time>
-              </div>
-              <div class="priceWrap">
-                <h3 class="fontNeuron fwSemi"><span class="textSecondary">$ 490,000</span> <span class="textUnit fwNormal">/ monthly</span></h3>
-                <!-- linkDistributer -->
-                <a href="#" class="linkDistributer text-capitalize hidden-xs-ph"><i class="distributerIcn fi flaticon-social"></i> ali tufan</a>
-              </div>
-              <!-- postColumnFoot -->
-              <footer class="postColumnFoot">
-                <ul class="list-unstyled">
-                  <li>
-                    <strong class="fwNormal elemenBlock text-primary">Area</strong>
-                    <strong class="fwNormal elemenBlock">2100 m2</strong>
-                  </li>
-                  <li>
-                    <strong class="fwNormal elemenBlock text-primary">Beds</strong>
-                    <strong class="fwNormal elemenBlock">3</strong>
-                  </li>
-                  <li>
-                    <strong class="fwNormal elemenBlock text-primary">Baths</strong>
-                    <strong class="fwNormal elemenBlock">2</strong>
-                  </li>
-                  <li>
-                    <strong class="fwNormal elemenBlock text-primary">Garages</strong>
-                    <strong class="fwNormal elemenBlock">1</strong>
-                  </li>
-                </ul>
-              </footer>
-            </div>
-          </article>
+          </div>d
         </div>
         <div class="col-xs-12 col-sm-12 col-lg-4">
           <!-- contactFormPage -->
@@ -565,3 +387,15 @@
     </div>
   </form>
 </main>
+<router-outlet></router-outlet>
+
+<!-- include jQuery library -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBMhNtTeK3q5agvPCN_yKSk-GQbXg3WULo&callback=myMap"></script>
+<script src="./assets/js/jquery.js"></script>
+<script src="./assets/js/plugins.js"></script>
+<!-- include bootstrap JavaScript -->
+<script src="./assets/js/bootstrap-slider.min.js"></script>
+<!-- include custom JavaScript -->
+<script src="./assets/js/jquery.main.js"></script>
+<script type="text/javascript" src="./assets/js/map2.js"></script>
+<script type="text/javascript" src="./assets/js/init.js"></script>

@@ -1,0 +1,169 @@
+<main>
+  <!-- content -->
+  <section id="content" class="container pEqual">
+    <div class="addProperty">
+      <h1 class="fontNeuron">Add New Property</h1>
+      <div class="formContent">
+        <form [formGroup]="propertyForm" (ngSubmit)="onSubmit()">
+          <header class="contentHead">
+            <h2 class="fontNeuron">Basic Info</h2>
+            <div class="btnArea">
+            </div>
+          </header>
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="form-group">
+                <label for="itemN-15">Property Title*</label>
+                <input type="text" class="form-control" placeholder="House" id="itemN-15" formControlName="title">
+              </div>
+            </div>
+            <div class="col-xs-12">
+              <div class="form-group">
+                <label for="itemN-16">Price</label>
+                <input type="text" class="form-control" placeholder="Rs 158000" id="itemN-16" formControlName="price">
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-4">
+              <div class="form-group">
+                <label for="itemN-18">Bedrooms</label>
+                <input type="number" class="form-control" placeholder="5" min="0" max="9999" id="itemN-18" formControlName="bedroom">
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-4">
+              <div class="form-group">
+                <label for="itemN-19">Bathrooms</label>
+                <input type="number" class="form-control" placeholder="3" min="0" max="9999" id="itemN-19" formControlName="bathroom">
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-4">
+              <div class="form-group">
+                <label for="itemN-20">Garages</label>
+                <input type="number" class="form-control" placeholder="8" min="0" max="9999" id="itemN-20" formControlName="garages">
+              </div>
+            </div>
+            <div class="col-xs-12">
+              <div class="form-group">
+                <label for="itemN-21">Area</label>
+                <input type="text" class="form-control" placeholder="1500" id="itemN-21" formControlName="area">
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+              <div class="form-group">
+                <label for="itemN-23">Property Type</label>
+                <select data-placeholder="Select Option" class="chosen-select" id="itemN-23" formControlName="type">
+                  <option value="house">House</option>
+                  <option value="apartment">Apartment</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+              <div class="form-group">
+                <label for="itemN-24">Property Purpose</label>
+                <select data-placeholder="Select Option" class="chosen-select" id="itemN-24" formControlName="purpose">
+                  <option value="sale">Sale</option>
+                  <option value="rent">Rent</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-xs-12">
+              <div class="form-group">
+                <label for="itemN-25">Description</label>
+                <textarea class="form-control" id="itemN-25" placeholder="" formControlName="description" ></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="btnArea">
+          </div>
+          <header class="contentHead">
+            <h2 class="fontNeuron">Location</h2>
+            <div class="btnArea">
+            </div>
+          </header>
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="form-group">
+                <label>City</label>
+                <select data-placeholder="Select city" class="chosen-select" formControlName="city">
+                  <option value="colombo">Colombo</option>
+                  <option value="kandy">Kandy</option>
+                  <option value="kurunegala">Kurunegala</option>
+                  <option value="Gall">Galle</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-xs-12">
+              <div class="form-group">
+                <label for="itemN-105">Address</label>
+                <input type="text" class="form-control" placeholder="Address" id="itemN-105" formControlName="address">
+              </div>
+            </div>
+          </div>
+          <header class="contentHead">
+          </header>
+          <div class="galleryUploads">
+            <div class="titleArea">
+              <span class="title">Photo Gallery</span>
+              <p>*At least one image is for valid submission, minimum width of 817px.</p>
+              <p>*You can mark an image as featured by clicking the star icon, Otherwise first image will be considered featured image.</p>
+              <div class="file-inputt" >
+                <input type="file"   (change)="onFileSelected1($event)" #fileUpload1 >
+              </div>
+              <div class="btnArea file-upload">
+                <a class="btn btn-info upload-btn" (click)="fileUpload1.click()"><i class="fa fa-upload"></i> Upload Photo</a>
+                <span class="text text-center">{{ fileName1 || "No file uploaded yet."}} </span>
+              </div>
+              <div class="file-inputt" >
+                <input type="file"   (change)="onFileSelected2($event)" #fileUpload2 >
+              </div>
+              <div class="btnArea file-upload">
+                <a class="btn btn-info upload-btn" (click)="fileUpload2.click()"><i class="fa fa-upload"></i> Upload Photo</a>
+                <span class="text text-center">{{ fileName2 || "No file uploaded yet."}} </span>
+              </div>
+              <div class="file-inputt" >
+                <input type="file"   (change)="onFileSelected3($event)" #fileUpload3 >
+              </div>
+              <div class="btnArea file-upload">
+                <a class="btn btn-info upload-btn" (click)="fileUpload3.click()"><i class="fa fa-upload"></i> Upload Photo</a>
+                <span class="text text-center">{{ fileName3 || "No file uploaded yet."}} </span>
+              </div>
+            </div>
+          </div>
+          <div class="galleryUploads">
+            <div class="titleArea">
+              <span class="title">Floor Plans</span>
+            </div>
+            <div class="imageGallery">
+              <div class="file-inputt" >
+                <input type="file"   (change)="onFileSelected4($event)" #fileUpload4 >
+              </div>
+              <div class="btnArea file-upload">
+                <a class="btn btn-info upload-btn" (click)="fileUpload4.click()"><i class="fa fa-upload"></i> Upload Photo</a>
+                <span class="text text-center">{{ floor || "No file uploaded yet."}} </span>
+              </div>
+            </div>
+          </div>
+          <div class="btnArea">
+
+              <button type="submit" class="btn btn-primary elemenBlock fontNeuron fwNormal text-uppercase btnSubmit">Submit</button>
+            </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  <!-- signupFormAside -->
+  <form action="#" class="bgWhite signupFormAside">
+    <div class="container signupFormAsideHolder">
+      <span class="icnAbsolute elemenBlock fi flaticon-message"></span>
+      <div class="col-xs-12 col-md-offset-2 col-md-6">
+        <h3 class="fontNeuron textSecondary">Sign up for our newsletter.</h3>
+        <p>Lorem molestie odio. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+      </div>
+      <div class="col-xs-12 col-md-4">
+        <div class="form-group">
+          <input type="email" id="email" class="form-control elemenBlock" placeholder="Your email">
+          <button type="button" class="buttonReset fi flaticon-navigation"></button>
+        </div>
+      </div>
+    </div>
+  </form>
+</main>
