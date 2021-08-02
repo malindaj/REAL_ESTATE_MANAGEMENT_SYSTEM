@@ -19,21 +19,25 @@
     <select>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:final-backend" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/final-backend" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a10c29ad-f167-44b2-87a9-d106a8a884fe" name="Default Changelist" comment="final state backed">
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/REAL_ESTATE_MANAGEMENT_SYSTEM.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/REAL_ESTATE_MANAGEMENT_SYSTEM.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings">
+  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/real_backend/composer.json</pharConfigPath>
     <execution />
   </component>
   <component name="Git.Settings">
@@ -64,6 +68,13 @@
             <value>
               <list>
                 <branch-info repo="$PROJECT_DIR$" source="final-backend" />
+              </list>
+            </value>
+          </entry>
+          <entry type="REMOTE">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="origin/final-backend" />
               </list>
             </value>
           </entry>
@@ -205,13 +216,20 @@
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/final project/final" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/real-front/node_modules/typescript/lib" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$USER_HOME$/Desktop/final project/final" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
@@ -227,6 +245,7 @@
       <workItem from="1626880935299" duration="201000" />
       <workItem from="1626920284943" duration="168000" />
       <workItem from="1626973041705" duration="7932000" />
+      <workItem from="1627916848005" duration="366000" />
     </task>
     <task id="LOCAL-00001" summary="register form">
       <created>1626973088250</created>
@@ -249,11 +268,18 @@
       <option name="project" value="LOCAL" />
       <updated>1627911778683</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="final state backed">
+      <created>1627911802035</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1627911802035</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -266,7 +292,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="final-backend" />
+                        <option value="origin/final-backend" />
                       </list>
                     </value>
                   </entry>
@@ -285,9 +311,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="final state backed" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="460" y="217" key="Vcs.Push.Dialog.v2" timestamp="1626973239556">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state x="307" y="-800" key="Vcs.Push.Dialog.v2" timestamp="1627911816908">
+      <screen x="0" y="-1001" width="1280" height="1001" />
     </state>
+    <state x="307" y="-800" key="Vcs.Push.Dialog.v2/0.-1001.1280.1001/0.23.1920.1005@0.-1001.1280.1001" timestamp="1627911816908" />
     <state x="460" y="217" key="Vcs.Push.Dialog.v2/0.-1024.1280.1024/0.0.1920.1080@0.0.1920.1080" timestamp="1626973239556" />
   </component>
 </project>
