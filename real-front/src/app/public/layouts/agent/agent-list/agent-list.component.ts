@@ -1,4 +1,11 @@
 import { Component, OnInit } from '@angular/core';
+import {AgentService} from "../../../../shared/agent.service";
+
+export class AgentList{
+  name: String ;
+  image: String ;
+  id: number;
+}
 
 @Component({
   selector: 'app-agent-list',
@@ -6,10 +13,25 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./agent-list.component.css']
 })
 export class AgentListComponent implements OnInit {
+  agentList: any;
+  baseUrl = 'http://localhost:8000';
 
-  constructor() { }
+  constructor(public agentService: AgentService) {
+    this.agentService.agentList().subscribe((data:any) => {
+      this.agentList = data;
+      console.log(data);
+      console.log('****************');
+      console.log();
+    });
+  }
 
   ngOnInit(): void {
+    this.agentService.agentList().subscribe((data:any) => {
+      this.agentList = data;
+      console.log();
+      console.log('*****************');
+      console.log();
+    });
   }
 
 }
