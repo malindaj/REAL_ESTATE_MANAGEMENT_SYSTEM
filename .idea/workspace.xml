@@ -21,22 +21,18 @@
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:origin/final-backend" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/master" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a10c29ad-f167-44b2-87a9-d106a8a884fe" name="Default Changelist" comment="final state backed">
-      <change beforePath="$PROJECT_DIR$/.idea/REAL_ESTATE_MANAGEMENT_SYSTEM.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/REAL_ESTATE_MANAGEMENT_SYSTEM.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="a10c29ad-f167-44b2-87a9-d106a8a884fe" name="Default Changelist" comment="final state backeddd" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/real_backend/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -51,13 +47,6 @@
               </list>
             </value>
           </entry>
-          <entry type="REMOTE">
-            <value>
-              <list>
-                <branch-info repo="$PROJECT_DIR$" source="origin/master" />
-              </list>
-            </value>
-          </entry>
         </map>
       </branch-storage>
     </excluded-from-favorite>
@@ -68,13 +57,6 @@
             <value>
               <list>
                 <branch-info repo="$PROJECT_DIR$" source="final-backend" />
-              </list>
-            </value>
-          </entry>
-          <entry type="REMOTE">
-            <value>
-              <list>
-                <branch-info repo="$PROJECT_DIR$" source="origin/final-backend" />
               </list>
             </value>
           </entry>
@@ -246,6 +228,7 @@
       <workItem from="1626920284943" duration="168000" />
       <workItem from="1626973041705" duration="7932000" />
       <workItem from="1627916848005" duration="366000" />
+      <workItem from="1627926413549" duration="556000" />
     </task>
     <task id="LOCAL-00001" summary="register form">
       <created>1626973088250</created>
@@ -275,7 +258,28 @@
       <option name="project" value="LOCAL" />
       <updated>1627911802035</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="final state backed">
+      <created>1627926481247</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1627926481247</updated>
+    </task>
+    <task id="LOCAL-00006" summary="final state backed">
+      <created>1627926605600</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1627926605600</updated>
+    </task>
+    <task id="LOCAL-00007" summary="final state backeddd">
+      <created>1627926690234</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1627926690234</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -292,7 +296,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/final-backend" />
+                        <option value="origin/master" />
                       </list>
                     </value>
                   </entry>
@@ -307,14 +311,28 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="register form" />
+    <MESSAGE value="final state backeddf" />
     <MESSAGE value="final state backed" />
-    <option name="LAST_COMMIT_MESSAGE" value="final state backed" />
+    <MESSAGE value="final state backeddd" />
+    <option name="LAST_COMMIT_MESSAGE" value="final state backeddd" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="307" y="-800" key="Vcs.Push.Dialog.v2" timestamp="1627911816908">
-      <screen x="0" y="-1001" width="1280" height="1001" />
+    <state x="851" y="410" key="#Notifications" timestamp="1627926735683">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="851" y="410" key="#Notifications/0.-1024.1280.1024/0.0.1920.1080@0.0.1920.1080" timestamp="1627926735683" />
+    <state x="851" y="414" key="MultipleFileMergeDialog" timestamp="1627926932876">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="851" y="414" key="MultipleFileMergeDialog/0.-1024.1280.1024/0.0.1920.1080@0.0.1920.1080" timestamp="1627926932876" />
+    <state x="460" y="217" key="Vcs.Push.Dialog.v2" timestamp="1627926879013">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="307" y="-800" key="Vcs.Push.Dialog.v2/0.-1001.1280.1001/0.23.1920.1005@0.-1001.1280.1001" timestamp="1627911816908" />
-    <state x="460" y="217" key="Vcs.Push.Dialog.v2/0.-1024.1280.1024/0.0.1920.1080@0.0.1920.1080" timestamp="1626973239556" />
+    <state x="460" y="217" key="Vcs.Push.Dialog.v2/0.-1024.1280.1024/0.0.1920.1080@0.0.1920.1080" timestamp="1627926879013" />
+    <state x="636" y="335" key="git4idea.merge.GitMergeDialog" timestamp="1627926917709">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="636" y="335" key="git4idea.merge.GitMergeDialog/0.-1024.1280.1024/0.0.1920.1080@0.0.1920.1080" timestamp="1627926917709" />
   </component>
 </project>
