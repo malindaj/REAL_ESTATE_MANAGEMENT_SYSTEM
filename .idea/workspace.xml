@@ -22,43 +22,20 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a10c29ad-f167-44b2-87a9-d106a8a884fe" name="Default Changelist" comment="change-map">
-      <change afterPath="$PROJECT_DIR$/real-front/src/assets/images/bgm1.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/real-front/src/assets/images/logo-r.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/real-front/src/assets/images/p11.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/real-front/src/assets/images/p2.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/real-front/src/assets/images/p3.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/real-front/src/assets/images/p4.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/real-front/src/assets/images/p5.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/real-front/src/assets/images/p6.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/real-front/src/assets/images/p7.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/real-front/src/assets/images/p8.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/real-front/src/assets/images/real-logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/real-front/src/assets/images/real-logo2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/real-front/src/assets/p1/images.jpeg" afterDir="false" />
+    <list default="true" id="a10c29ad-f167-44b2-87a9-d106a8a884fe" name="Default Changelist" comment="frontend ed finish">
+      <change afterPath="$PROJECT_DIR$/real-front/src/app/public/pages/about/about.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/real-front/src/app/public/pages/about/about.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/real-front/src/app/public/pages/about/about.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/real-front/src/app/public/pages/about/about.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/real-front/src/app/public/pages/contact/contact.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/real-front/src/app/public/pages/contact/contact.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/real-front/src/app/public/pages/contact/contact.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/real-front/src/app/public/pages/contact/contact.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/real-front/src/assets/images/about.jpeg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/real-front/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/real-front/src/app/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/real-front/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/real-front/src/app/app.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/real-front/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/real-front/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/real-front/src/app/auth/register/register.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/real-front/src/app/auth/register/register.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/real-front/src/app/auth/register/register.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/real-front/src/app/auth/register/register.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/real-front/src/app/auth/register/register.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/real-front/src/app/auth/register/register.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/real-front/src/app/public/footer/footer.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/real-front/src/app/public/footer/footer.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/real-front/src/app/public/header/header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/real-front/src/app/public/header/header.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/real-front/src/app/public/home/home.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/real-front/src/app/public/home/home.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/real-front/src/app/public/home/home.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/real-front/src/app/public/home/home.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/real-front/src/app/public/home/home.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/real-front/src/app/public/home/home.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/real-front/src/app/public/layouts/agent/agent-detail/agent-detail.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/real-front/src/app/public/layouts/agent/agent-detail/agent-detail.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/real-front/src/app/public/layouts/agent/agent-detail/agent-detail.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/real-front/src/app/public/layouts/agent/agent-detail/agent-detail.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/real-front/src/app/public/layouts/agent/agent-list/agent-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/real-front/src/app/public/layouts/agent/agent-list/agent-list.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/real-front/src/app/public/layouts/agent/agent-list/agent-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/real-front/src/app/public/layouts/agent/agent-list/agent-list.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/real-front/src/app/public/layouts/property/property-list/property-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/real-front/src/app/public/layouts/property/property-list/property-list.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/real-front/src/app/public/layouts/property/property-list/property-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/real-front/src/app/public/layouts/property/property-list/property-list.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/real-front/src/app/public/layouts/property/single-property/single-property.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/real-front/src/app/public/layouts/property/single-property/single-property.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/real-front/src/app/public/layouts/property/single-property/single-property.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/real-front/src/app/public/layouts/property/single-property/single-property.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/real-front/src/app/shared/auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/real-front/src/app/shared/auth.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/real-front/src/app/shared/user.ts" beforeDir="false" afterPath="$PROJECT_DIR$/real-front/src/app/shared/user.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/real-front/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/real-front/src/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,11 +51,15 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1vd97M3hrNc4NhoQ3FdFvKXM93i" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -112,7 +93,7 @@
       <workItem from="1627498670594" duration="12811000" />
       <workItem from="1627557157662" duration="5496000" />
       <workItem from="1627746302214" duration="137000" />
-      <workItem from="1627810564053" duration="48704000" />
+      <workItem from="1627810564053" duration="51531000" />
     </task>
     <task id="LOCAL-00001" summary="register form">
       <created>1626973088250</created>
@@ -149,7 +130,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627300531112</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="frontend ed finish">
+      <created>1627908115540</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1627908115540</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -180,18 +168,20 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="register form" />
     <MESSAGE value="login connect api" />
     <MESSAGE value="before map" />
     <MESSAGE value="change map" />
     <MESSAGE value="change-map" />
-    <option name="LAST_COMMIT_MESSAGE" value="change-map" />
+    <MESSAGE value="frontend ed finish" />
+    <option name="LAST_COMMIT_MESSAGE" value="frontend ed finish" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="460" y="217" key="Vcs.Push.Dialog.v2" timestamp="1627300543125">
+    <state x="460" y="217" key="Vcs.Push.Dialog.v2" timestamp="1627908133869">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="460" y="217" key="Vcs.Push.Dialog.v2/0.-1024.1280.1024/0.0.1920.1080@0.0.1920.1080" timestamp="1627300543125" />
+    <state x="460" y="217" key="Vcs.Push.Dialog.v2/0.-1024.1280.1024/0.0.1920.1080@0.0.1920.1080" timestamp="1627908133869" />
     <state width="750" height="535" key="javadoc.popup" timestamp="1627480525593">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

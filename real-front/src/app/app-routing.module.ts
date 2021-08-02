@@ -14,6 +14,8 @@ import {Step5Component} from "./public/layouts/property/add-property/step5/step5
 import {Step3Component} from "./public/layouts/property/add-property/step3/step3.component";
 import {SinglePropertyComponent} from "./public/layouts/property/single-property/single-property.component";
 import {SearchComponent} from "./public/search/search.component";
+import {AboutComponent} from "./public/pages/about/about.component";
+import {ContactComponent} from "./public/pages/contact/contact.component";
 
 
 const routes: Routes = [
@@ -32,6 +34,8 @@ const routes: Routes = [
   {path: 'step-3', component: Step3Component},
   {path: 'step-4', component: Step4Component},
   {path: 'step-5', component: Step5Component},
+  {path: 'about', component: AboutComponent},
+  {path: 'contact', component: ContactComponent},
 ];
 
 

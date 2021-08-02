@@ -24,6 +24,8 @@ import { Step3Component } from './public/layouts/property/add-property/step3/ste
 import { Step4Component } from './public/layouts/property/add-property/step4/step4.component';
 import { Step5Component } from './public/layouts/property/add-property/step5/step5.component';
 import { SearchComponent } from './public/search/search.component';
+import { AboutComponent } from './public/pages/about/about.component';
+import { ContactComponent } from './public/pages/contact/contact.component';
 
 
 @NgModule({
@@ -45,7 +47,9 @@ import { SearchComponent } from './public/search/search.component';
     Step3Component,
     Step4Component,
     Step5Component,
-    SearchComponent
+    SearchComponent,
+    AboutComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
