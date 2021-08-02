@@ -1,435 +1,313 @@
 <main>
-  <!-- halfWrapper -->
-  <section class="halfWrapper container-fluid">
-    <!-- colLeft -->
-    <div class="colLeft col">
-      <div class="map-area">
-        <div id="map-container">
-          <div id="map_div">&nbsp;</div>
+  <!-- findFormBlock -->
+  <form action="#" class="findFormBlock findFormBlock2 bgLightDark hasShadowTop offsetHeaderTop">
+    <div class="container">
+      <div class="row align-center d-flex">
+        <div class="col-xs-12 col-sm-5 col-md-4 col-lg-5">
+          <div class="form-group">
+            <input type="text" class="form-control elemenBlock noBdr sizeMedium" placeholder="Enter address e.g. street, city and state or zip">
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-2">
+          <div class="form-group">
+            <i class="fi flaticon-target icnInput"></i>
+            <input type="text" class="form-control elemenBlock noBdr sizeMedium" placeholder="All Cities">
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-3 col-md-2">
+          <div class="form-group">
+            <select data-placeholder="All Areas" class="chosen-select noBdr sizeMedium">
+              <option value="1">All Areas</option>
+              <option value="2">All Areas</option>
+              <option value="2">All Areas</option>
+              <option value="2">All Areas</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-4 col-lg-3">
+          <div class="btnsWrap">
+            <!-- otherFeaturesOpener -->
+            <a class="btnPlus otherFeaturesOpener text-capitalize noTopBottom" role="button" data-toggle="collapse" href="#otherFeaturescollapse" aria-expanded="false" aria-controls="otherFeaturescollapse">
+              <i class="fas btnIcn fa-plus-circle text-info opener"></i>
+              <i class="fas fa-minus-circle closer btnIcn text-info"></i>
+              Advanced
+            </a>
+            <button type="button" class="btn btnDark buttonSmall text-uppercase fontNeuron hidden-xs">SEARCH</button>
+          </div>
         </div>
       </div>
-      <!-- mapActionsList -->
-      <ul class="list-unstyled mapActionsList">
-        <li><button type="button" class="btn btn-primary mapActionButton">View</button></li>
-        <li><button type="button" class="btn btn-primary mapActionButton">Prev</button></li>
-        <li><button type="button" class="btn btn-primary mapActionButton">Next</button></li>
-      </ul>
-      <!-- btnFullScreen -->
-      <button class="mapActionButton btn btn-primary btnFullScreen" type="button">Fullscreen</button>
-    </div>
-    <!-- colRight -->
-    <div class="colRight col bgWhite hasShadowTop">
-      <!-- findFormBlock -->
-      <form action="#" class="findFormBlock findFormBlock4">
-        <div class="row align-center d-flex">
-          <div class="col-xs-12 col-sm-7">
-            <div class="form-group">
-              <input type="text" class="form-control elemenBlock" placeholder="Enter address e.g. street, city and state or zip">
-            </div>
-          </div>
-          <div class="col-xs-12 col-sm-5">
-            <div class="form-group">
-              <i class="fi flaticon-target icnInput"></i>
-              <input type="text" class="form-control elemenBlock" placeholder="Location">
-            </div>
-          </div>
-          <div class="col-xs-12">
-            <div class="form-group rangerGroup">
-              <label class="fwNormal customLabelCheck large">
-                <input type="checkbox" class="customFormInputReset" checked>
-                <span class="fakeCheckbox"></span>
-                <span class="fakeLabel">Radius: 10 km</span>
-              </label>
-              <div class="rangeWrap">
-                <input id="km-range" type="text" class="span2" value="" data-slider-min="10" data-slider-max="10000" data-slider-step="10" data-slider-value="[0,10000]"/>
-              </div>
-            </div>
-          </div>
-          <div class="col-xs-12">
-            <div class="row">
-              <div class="col-xs-12 col-sm-6 col-wd3-4">
-                <div class="form-group">
-                  <select data-placeholder="All Status" class="chosen-select">
-                    <option value="1">All Status</option>
-                    <option value="2">All Status</option>
-                    <option value="2">All Status</option>
-                    <option value="2">All Status</option>
-                  </select>
-                </div>
-              </div>
-              <div class="col-xs-12 col-sm-6 col-md-6 col-wd3-2">
-                <div class="form-group">
-                  <select data-placeholder="Beds" class="chosen-select">
-                    <option value="1">Beds</option>
-                    <option value="2">Beds</option>
-                    <option value="2">Beds</option>
-                    <option value="2">Beds</option>
-                  </select>
-                </div>
-              </div>
-              <div class="col-xs-12 col-sm-6 col-md-4 col-wd3-2">
-                <div class="form-group">
-                  <select data-placeholder="Baths" class="chosen-select">
-                    <option value="1">Baths</option>
-                    <option value="2">Baths</option>
-                    <option value="2">Baths</option>
-                    <option value="2">Baths</option>
-                  </select>
-                </div>
-              </div>
-              <div class="col-xs-12 col-sm-6 col-md-4 col-wd3-2">
-                <div class="form-group">
-                  <input type="text" class="form-control elemenBlock" placeholder="Min Area">
-                </div>
-              </div>
-              <div class="col-xs-12 col-sm-12 col-md-4 col-wd3-2">
-                <div class="form-group">
-                  <input type="text" class="form-control elemenBlock" placeholder="Max Area">
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xs-12">
-            <div class="row">
-              <div class="col-xs-12 col-md-8">
-                <div class="price-wrapper">Price Range: From <b class="startValue">$500</b> to <b class="endValue">$500,000</b><!-- Filter by price interval: <b>€ 10</b><b>€ 1000</b> --></div>
-                <input id="price-range" type="text" class="span2" value="" data-slider-min="500" data-slider-max="500000" data-slider-step="10" data-slider-value="[100000,400000]"/>
-              </div>
-              <div class="col-xs-12 col-md-4 hidden-xs hidden-sm">
-                <button type="button" class="btn btnSecondary text-uppercase fontNeuron">SEARCH</button>
-              </div>
-              <div class="col-xs-12">
-                <a class="btnPlus otherFeaturesOpener text-capitalize" role="button" data-toggle="collapse" href="#otherFeaturescollapse" aria-expanded="false" aria-controls="otherFeaturescollapse">
-                  <i class="fas btnIcn fa-plus-circle text-info opener"></i>
-                  <i class="fas fa-minus-circle closer btnIcn text-info"></i>
-                  Others Features
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- orderRow -->
-        <div class="row">
-          <div class="col-xs-12">
-            <!-- otherFeaturesCollapse -->
-            <div class="collapse otherFeaturesCollapse" id="otherFeaturescollapse">
-              <!-- checkList -->
-              <ul class="list-unstyled checkList text-primary">
-                <li>
-                  <label class="fwNormal customLabelCheck">
-                    <input type="checkbox" class="customFormInputReset">
-                    <span class="fakeCheckbox"></span>
-                    <span class="fakeLabel">Air conditioning</span>
-                  </label>
-                </li>
-                <li>
-                  <label class="fwNormal customLabelCheck">
-                    <input type="checkbox" class="customFormInputReset">
-                    <span class="fakeCheckbox"></span>
-                    <span class="fakeLabel">Cofee pot</span>
-                  </label>
-                </li>
-                <li>
-                  <label class="fwNormal customLabelCheck">
-                    <input type="checkbox" class="customFormInputReset">
-                    <span class="fakeCheckbox"></span>
-                    <span class="fakeLabel">Fan</span>
-                  </label>
-                </li>
-                <li>
-                  <label class="fwNormal customLabelCheck">
-                    <input type="checkbox" class="customFormInputReset">
-                    <span class="fakeCheckbox"></span>
-                    <span class="fakeLabel">Hi-fi</span>
-                  </label>
-                </li>
-                <li>
-                  <label class="fwNormal customLabelCheck">
-                    <input type="checkbox" class="customFormInputReset">
-                    <span class="fakeCheckbox"></span>
-                    <span class="fakeLabel">Balcony</span>
-                  </label>
-                </li>
-                <li>
-                  <label class="fwNormal customLabelCheck">
-                    <input type="checkbox" class="customFormInputReset">
-                    <span class="fakeCheckbox"></span>
-                    <span class="fakeLabel">Computer</span>
-                  </label>
-                </li>
-                <li>
-                  <label class="fwNormal customLabelCheck">
-                    <input type="checkbox" class="customFormInputReset">
-                    <span class="fakeCheckbox"></span>
-                    <span class="fakeLabel">Fridge</span>
-                  </label>
-                </li>
-                <li>
-                  <label class="fwNormal customLabelCheck">
-                    <input type="checkbox" class="customFormInputReset">
-                    <span class="fakeCheckbox"></span>
-                    <span class="fakeLabel">Internet</span>
-                  </label>
-                </li>
-                <li>
-                  <label class="fwNormal customLabelCheck">
-                    <input type="checkbox" class="customFormInputReset">
-                    <span class="fakeCheckbox"></span>
-                    <span class="fakeLabel">Bedding</span>
-                  </label>
-                </li>
-                <li>
-                  <label class="fwNormal customLabelCheck">
-                    <input type="checkbox" class="customFormInputReset">
-                    <span class="fakeCheckbox"></span>
-                    <span class="fakeLabel">Cot</span>
-                  </label>
-                </li>
-                <li>
-                  <label class="fwNormal customLabelCheck">
-                    <input type="checkbox" class="customFormInputReset">
-                    <span class="fakeCheckbox"></span>
-                    <span class="fakeLabel">Grill</span>
-                  </label>
-                </li>
-                <li>
-                  <label class="fwNormal customLabelCheck">
-                    <input type="checkbox" class="customFormInputReset">
-                    <span class="fakeCheckbox"></span>
-                    <span class="fakeLabel">Iron</span>
-                  </label>
-                </li>
-                <li>
-                  <label class="fwNormal customLabelCheck">
-                    <input type="checkbox" class="customFormInputReset">
-                    <span class="fakeCheckbox"></span>
-                    <span class="fakeLabel">Cable TV</span>
-                  </label>
-                </li>
-                <li>
-                  <label class="fwNormal customLabelCheck">
-                    <input type="checkbox" class="customFormInputReset">
-                    <span class="fakeCheckbox"></span>
-                    <span class="fakeLabel">Dishwasher</span>
-                  </label>
-                </li>
-                <li>
-                  <label class="fwNormal customLabelCheck">
-                    <input type="checkbox" class="customFormInputReset">
-                    <span class="fakeCheckbox"></span>
-                    <span class="fakeLabel">Hairdryer</span>
-                  </label>
-                </li>
-                <li>
-                  <label class="fwNormal customLabelCheck">
-                    <input type="checkbox" class="customFormInputReset">
-                    <span class="fakeCheckbox"></span>
-                    <span class="fakeLabel">Juicer</span>
-                  </label>
-                </li>
-                <li>
-                  <label class="fwNormal customLabelCheck">
-                    <input type="checkbox" class="customFormInputReset">
-                    <span class="fakeCheckbox"></span>
-                    <span class="fakeLabel">Cleaning after exit</span>
-                  </label>
-                </li>
-                <li>
-                  <label class="fwNormal customLabelCheck">
-                    <input type="checkbox" class="customFormInputReset">
-                    <span class="fakeCheckbox"></span>
-                    <span class="fakeLabel">DVD</span>
-                  </label>
-                </li>
-                <li>
-                  <label class="fwNormal customLabelCheck">
-                    <input type="checkbox" class="customFormInputReset">
-                    <span class="fakeCheckbox"></span>
-                    <span class="fakeLabel">Heating</span>
-                  </label>
-                </li>
-                <li>
-                  <label class="fwNormal customLabelCheck">
-                    <input type="checkbox" class="customFormInputReset">
-                    <span class="fakeCheckbox"></span>
-                    <span class="fakeLabel">Lift</span>
-                  </label>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-xs-12 hidden-md hidden-lg">
-            <button type="button" class="btn btnSecondary text-uppercase fontNeuron">SEARCH</button>
-          </div>
-        </div>
-      </form>
-      <!-- halfContentHolder -->
-      <div class="bgBase halfContentHolder">
-        <header class="contentFiltersHeadingWrap row">
-          <div class="col-xs-12 col-sm-10">
-            <h1 class="fontNeuron">Listing Grid</h1>
-          </div>
-          <div class="col-xs-12 col-sm-2">
-            <!-- viewFilterLinks -->
-            <ul class="list-unstyled viewFilterLinks">
-              <li class="active"><a href="#"><i class="fas fa-th-large"></i></a></li>
-              <li><a href="#"><i class="fas fa-list"></i></a></li>
+      <!-- orderRow -->
+      <div class="row">
+        <div class="col-xs-12">
+          <!-- otherFeaturesCollapse -->
+          <div class="collapse otherFeaturesCollapse" id="otherFeaturescollapse">
+            <!-- checkList -->
+            <ul class="list-unstyled checkList text-primary">
+              <li>
+                <label class="fwNormal customLabelCheck">
+                  <input type="checkbox" class="customFormInputReset">
+                  <span class="fakeCheckbox"></span>
+                  <span class="fakeLabel">Air conditioning</span>
+                </label>
+              </li>
+              <li>
+                <label class="fwNormal customLabelCheck">
+                  <input type="checkbox" class="customFormInputReset">
+                  <span class="fakeCheckbox"></span>
+                  <span class="fakeLabel">Cofee pot</span>
+                </label>
+              </li>
+              <li>
+                <label class="fwNormal customLabelCheck">
+                  <input type="checkbox" class="customFormInputReset">
+                  <span class="fakeCheckbox"></span>
+                  <span class="fakeLabel">Fan</span>
+                </label>
+              </li>
+              <li>
+                <label class="fwNormal customLabelCheck">
+                  <input type="checkbox" class="customFormInputReset">
+                  <span class="fakeCheckbox"></span>
+                  <span class="fakeLabel">Hi-fi</span>
+                </label>
+              </li>
+              <li>
+                <label class="fwNormal customLabelCheck">
+                  <input type="checkbox" class="customFormInputReset">
+                  <span class="fakeCheckbox"></span>
+                  <span class="fakeLabel">Balcony</span>
+                </label>
+              </li>
+              <li>
+                <label class="fwNormal customLabelCheck">
+                  <input type="checkbox" class="customFormInputReset">
+                  <span class="fakeCheckbox"></span>
+                  <span class="fakeLabel">Computer</span>
+                </label>
+              </li>
+              <li>
+                <label class="fwNormal customLabelCheck">
+                  <input type="checkbox" class="customFormInputReset">
+                  <span class="fakeCheckbox"></span>
+                  <span class="fakeLabel">Fridge</span>
+                </label>
+              </li>
+              <li>
+                <label class="fwNormal customLabelCheck">
+                  <input type="checkbox" class="customFormInputReset">
+                  <span class="fakeCheckbox"></span>
+                  <span class="fakeLabel">Internet</span>
+                </label>
+              </li>
+              <li>
+                <label class="fwNormal customLabelCheck">
+                  <input type="checkbox" class="customFormInputReset">
+                  <span class="fakeCheckbox"></span>
+                  <span class="fakeLabel">Bedding</span>
+                </label>
+              </li>
+              <li>
+                <label class="fwNormal customLabelCheck">
+                  <input type="checkbox" class="customFormInputReset">
+                  <span class="fakeCheckbox"></span>
+                  <span class="fakeLabel">Cot</span>
+                </label>
+              </li>
+              <li>
+                <label class="fwNormal customLabelCheck">
+                  <input type="checkbox" class="customFormInputReset">
+                  <span class="fakeCheckbox"></span>
+                  <span class="fakeLabel">Grill</span>
+                </label>
+              </li>
+              <li>
+                <label class="fwNormal customLabelCheck">
+                  <input type="checkbox" class="customFormInputReset">
+                  <span class="fakeCheckbox"></span>
+                  <span class="fakeLabel">Iron</span>
+                </label>
+              </li>
+              <li>
+                <label class="fwNormal customLabelCheck">
+                  <input type="checkbox" class="customFormInputReset">
+                  <span class="fakeCheckbox"></span>
+                  <span class="fakeLabel">Cable TV</span>
+                </label>
+              </li>
+              <li>
+                <label class="fwNormal customLabelCheck">
+                  <input type="checkbox" class="customFormInputReset">
+                  <span class="fakeCheckbox"></span>
+                  <span class="fakeLabel">Dishwasher</span>
+                </label>
+              </li>
+              <li>
+                <label class="fwNormal customLabelCheck">
+                  <input type="checkbox" class="customFormInputReset">
+                  <span class="fakeCheckbox"></span>
+                  <span class="fakeLabel">Hairdryer</span>
+                </label>
+              </li>
+              <li>
+                <label class="fwNormal customLabelCheck">
+                  <input type="checkbox" class="customFormInputReset">
+                  <span class="fakeCheckbox"></span>
+                  <span class="fakeLabel">Juicer</span>
+                </label>
+              </li>
+              <li>
+                <label class="fwNormal customLabelCheck">
+                  <input type="checkbox" class="customFormInputReset">
+                  <span class="fakeCheckbox"></span>
+                  <span class="fakeLabel">Cleaning after exit</span>
+                </label>
+              </li>
+              <li>
+                <label class="fwNormal customLabelCheck">
+                  <input type="checkbox" class="customFormInputReset">
+                  <span class="fakeCheckbox"></span>
+                  <span class="fakeLabel">DVD</span>
+                </label>
+              </li>
+              <li>
+                <label class="fwNormal customLabelCheck">
+                  <input type="checkbox" class="customFormInputReset">
+                  <span class="fakeCheckbox"></span>
+                  <span class="fakeLabel">Heating</span>
+                </label>
+              </li>
+              <li>
+                <label class="fwNormal customLabelCheck">
+                  <input type="checkbox" class="customFormInputReset">
+                  <span class="fakeCheckbox"></span>
+                  <span class="fakeLabel">Lift</span>
+                </label>
+              </li>
             </ul>
           </div>
-        </header>
-        <div class="row">
-          <div class="col-xs-12 col-lg-6 col">
-            <!-- postColumn -->
-            <article class="postColumn hasOver bgWhite">
-              <div class="aligncenter">
-                <!-- postColumnImageSlider -->
-                <div class="slick-carousel slickSlider postColumnImageSlider">
-                  <div>
-                    <div class="imgHolder">
-                      <a href="properties-single1.html">
-                        <img src="https://via.placeholder.com/360x260" alt="image description">
-                      </a>
-                    </div>
-                  </div>
-                  <div>
-                    <div class="imgHolder">
-                      <a href="properties-single1.html">
-                        <img src="https://via.placeholder.com/360x260" alt="image description">
-                      </a>
-                    </div>
-                  </div>
-                  <div>
-                    <div class="imgHolder">
-                      <a href="properties-single1.html">
-                        <img src="https://via.placeholder.com/360x260" alt="image description">
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <!-- postHoverLinskList -->
-                <ul class="list-unstyled postHoverLinskList">
-                  <li><a href="#"><i class="fi flaticon-repeat"></i></a></li>
-                  <li class="hasOver">
-                    <a href="#"><i class="fi flaticon-share"></i></a>
-                    <!-- postColumnSocial -->
-                    <ul class="list-unstyled socialNetworks postColumnSocial">
-                      <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                      <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                      <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                      <li><a href="#"><i class="fab fa-google"></i></a></li>
-                    </ul>
-                  </li>
-                </ul>
-                <!-- linkToFavourite -->
-                <a href="#" class="linkToFavourite roundedCircle bg-primary textWhite icnHeartBeatAnim"><i class="far fa-heart"></i></a>
-              </div>
-              <h2 class="fontNeuron text-capitalize"><a href="properties-single1.html">Luxury Family Home</a></h2>
-              <address>
-                <span class="icn"><i class="fi flaticon-pin-1"></i></span>
-                <p>The Village, Jersey City, NJ 07302, USA </p>
-              </address>
-              <span class="btn btnSmall btn-success text-capitalize">For Sale</span>
-              <h3 class="fontNeuron fwSemi"><span class="textSecondary">$ 490,000</span> <span class="textUnit fwNormal">/ monthly</span></h3>
-              <!-- postColumnFoot -->
-              <footer class="postColumnFoot">
-                <ul class="list-unstyled">
-                  <li>
-                    <strong class="fwNormal elemenBlock text-primary">Area</strong>
-                    <strong class="fwNormal elemenBlock">2100 m2</strong>
-                  </li>
-                  <li>
-                    <strong class="fwNormal elemenBlock text-primary">Beds</strong>
-                    <strong class="fwNormal elemenBlock">3</strong>
-                  </li>
-                  <li>
-                    <strong class="fwNormal elemenBlock text-primary">Baths</strong>
-                    <strong class="fwNormal elemenBlock">2</strong>
-                  </li>
-                  <li>
-                    <strong class="fwNormal elemenBlock text-primary">Garages</strong>
-                    <strong class="fwNormal elemenBlock">1</strong>
-                  </li>
-                </ul>
-              </footer>
-            </article>
-          </div>
-          <div class="col-xs-12 col-lg-6 col">
-            <!-- postColumn -->
-            <article class="postColumn hasOver bgWhite">
-              <div class="aligncenter">
-                <!-- postColumnImageSlider -->
-                <div class="slick-carousel slickSlider postColumnImageSlider">
-                  <div>
-                    <div class="imgHolder">
-                      <a href="properties-single1.html">
-                        <img src="https://via.placeholder.com/360x260" alt="image description">
-                      </a>
-                    </div>
-                  </div>
-                  <div>
-                    <div class="imgHolder">
-                      <a href="properties-single1.html">
-                        <img src="https://via.placeholder.com/360x260" alt="image description">
-                      </a>
-                    </div>
-                  </div>
-                  <div>
-                    <div class="imgHolder">
-                      <a href="properties-single1.html">
-                        <img src="https://via.placeholder.com/360x260" alt="image description">
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <!-- postHoverLinskList -->
-                <ul class="list-unstyled postHoverLinskList">
-                  <li><a href="#"><i class="fi flaticon-repeat"></i></a></li>
-                  <li class="hasOver">
-                    <a href="#"><i class="fi flaticon-share"></i></a>
-                    <!-- postColumnSocial -->
-                    <ul class="list-unstyled socialNetworks postColumnSocial">
-                      <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                      <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                      <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                      <li><a href="#"><i class="fab fa-google"></i></a></li>
-                    </ul>
-                  </li>
-                </ul>
-                <!-- linkToFavourite -->
-                <a href="#" class="linkToFavourite roundedCircle bg-primary textWhite icnHeartBeatAnim"><i class="far fa-heart"></i></a>
-              </div>
-              <h2 class="fontNeuron text-capitalize"><a href="properties-single1.html">Meridian Villas</a></h2>
-              <address>
-                <span class="icn"><i class="fi flaticon-pin-1"></i></span>
-                <p>London, United Kingdom</p>
-              </address>
-              <span class="btn btnSmall btn-info text-capitalize">For Rent</span>
-              <h3 class="fontNeuron fwSemi"><span class="textSecondary">$ 920,000</span> <span class="textUnit fwNormal">/ monthly</span></h3>
-              <!-- postColumnFoot -->
-              <footer class="postColumnFoot">
-                <ul class="list-unstyled">
-                  <li>
-                    <strong class="fwNormal elemenBlock text-primary">Area</strong>
-                    <strong class="fwNormal elemenBlock">2100 m2</strong>
-                  </li>
-                  <li>
-                    <strong class="fwNormal elemenBlock text-primary">Beds</strong>
-                    <strong class="fwNormal elemenBlock">3</strong>
-                  </li>
-                  <li>
-                    <strong class="fwNormal elemenBlock text-primary">Baths</strong>
-                    <strong class="fwNormal elemenBlock">2</strong>
-                  </li>
-                  <li>
-                    <strong class="fwNormal elemenBlock text-primary">Garages</strong>
-                    <strong class="fwNormal elemenBlock">1</strong>
-                  </li>
-                </ul>
-              </footer>
-            </article>
-          </div>
+        </div>
+        <div class="col-xs-12 hidden-sm hidden-md hidden-lg">
+          <button type="button" class="btn btnDark text-uppercase fontNeuron">SEARCH</button>
         </div>
       </div>
     </div>
+  </form>
+  <!-- content -->
+  <section id="content" class="container pabIndent">
+    <!-- contentFiltersHeadingWrap -->
+    <header class="contentFiltersHeadingWrap row">
+      <div class="col-xs-12 col-sm-10">
+        <h1 class="fontNeuron">Properties</h1>
+      </div>
+      <div class="col-xs-12 col-sm-2">
+        <!-- viewFilterLinks -->
+        <ul class="list-unstyled viewFilterLinks">
+          <li class="active"><a href="#"><i class="fas fa-th-large"></i></a></li>
+          <li><a href="#"><i class="fas fa-list"></i></a></li>
+        </ul>
+      </div>
+    </header>
+    <header class="row rowHead rowHead2">
+      <div class="col-xs-12 col-md-8">
+        <!-- postsFiltersList -->
+        <ul class="list-unstyled postsFiltersList postsFiltersList2 text-capitalize text-center isoFiltersList">
+          <li class="active"><a href="#">All</a></li>
+          <li><a href="#" data-filter=".rent">For Rent</a></li>
+          <li><a href="#" data-filter=".sale">For Sale</a></li>
+        </ul>
+      </div>
+      <div class="col-xs-12 col-md-4">
+        <!-- sortGroup -->
+        <div class="sortGroup">
+          <strong class="groupTitle fwNormal">Sort by:</strong>
+          <div class="dropdown">
+            <button class="dropdown-toggle buttonReset" type="button" id="sortGroup" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Default Order <i class="icn fas fa-chevron-down"></i></button>
+            <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="sortGroup">
+              <li><a href="#">Default Order</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- isoContentHolder -->
+    <div class="isoContentHolder">
+      <div class="row">
+        <div *ngFor="let property  of propertyList" class="col-xs-12 col-sm-6 col col-md-4 col isoCol sale">
+          <!-- postColumn -->
+          <article class="postColumn hasOver bgWhite">
+            <div class="aligncenter">
+              <!-- postColumnImageSlider -->
+              <div class="">
+                <div>
+                  <div class="imgHolder">
+                    <a [routerLink]="['/property-detail',property.id]">
+                      <img [src]="baseUrl+property.image" alt="image description">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- postHoverLinskList -->
+              <ul class="list-unstyled postHoverLinskList">
+                <li><a href="#"><i class="fi flaticon-repeat"></i></a></li>
+                <li class="hasOver">
+                  <a href="#"><i class="fi flaticon-share"></i></a>
+                  <!-- postColumnSocial -->
+                  <ul class="list-unstyled socialNetworks postColumnSocial">
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-google"></i></a></li>
+                  </ul>
+                </li>
+              </ul>
+              <!-- linkToFavourite -->
+              <a href="#" class="linkToFavourite roundedCircle bg-primary textWhite icnHeartBeatAnim"><i class="far fa-heart"></i></a>
+            </div>
+            <h2 class="fontNeuron text-capitalize"><a [routerLink]="['/property-detail',property.id]">{{property.title}}</a></h2>
+            <address>
+              <span class="icn"><i class="fi flaticon-pin-1"></i></span>
+              <p>{{property.city}} </p>
+            </address>
+            <span class="btn btnSmall btn-success text-capitalize">{{property.type}}</span>
+            <h3 class="fontNeuron fwSemi"><span class="textSecondary">Rs {{property.price}}</span> <span class="textUnit fwNormal">/ monthly</span></h3>
+            <!-- postColumnFoot -->
+            <footer class="postColumnFoot">
+              <ul class="list-unstyled">
+                <li>
+                  <strong class="fwNormal elemenBlock text-primary">Area</strong>
+                  <strong class="fwNormal elemenBlock">{{property.area}} m2</strong>
+                </li>
+                <li>
+                  <strong class="fwNormal elemenBlock text-primary">Beds</strong>
+                  <strong class="fwNormal elemenBlock">{{property.bedroom}}</strong>
+                </li>
+                <li>
+                  <strong class="fwNormal elemenBlock text-primary">Baths</strong>
+                  <strong class="fwNormal elemenBlock">{{property.bathroom}}</strong>
+                </li>
+                <li>
+                  <strong class="fwNormal elemenBlock text-primary">Garages</strong>
+                  <strong class="fwNormal elemenBlock">{{property.garages}}</strong>
+                </li>
+              </ul>
+            </footer>
+          </article>
+        </div>
+
+      </div>
+      </div>
+
+    <!-- navigation pagination -->
+    <nav class="navigation pagination pagination1 fontNeuron" role="navigation">
+      <div class="nav-links">
+        <a class="prev page-numbers" href="#">Previous</a>
+        <a class="page-numbers" href="#">1</a>
+        <span class="page-numbers current">2</span>
+        <a class="page-numbers" href="#">3</a>
+        <span class="page-numbers dots">&hellip;</span>
+        <a class="page-numbers" href="#">22</a>
+        <a class="next page-numbers" href="#">Next</a>
+      </div>
+    </nav>
   </section>
 </main>

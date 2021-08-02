@@ -11,9 +11,8 @@ export class AuthService {
   constructor(private http: HttpClient) {}
 
   // User registration
-  register(user: User): Observable<any> {
-    user.role_id = 3;
-    user.image = 'defult';
+  register(user: FormData): Observable<any> {
+    console.log(user);
     return this.http.post('http://localhost:8000/api/auth/register', user);
   }
 

@@ -1,26 +1,34 @@
 import {Component, OnInit, Renderer2} from '@angular/core';
 import {ActivatedRoute, Router} from "@angular/router";
-import {AgentService} from "../../../../shared/agent.service";
+import {AgentService} from "../../shared/agent.service";
+import { FormsModule } from '@angular/forms';
+
 
 @Component({
-  selector: 'app-single-property',
-  templateUrl: './single-property.component.html',
-  styleUrls: ['./single-property.component.css']
+  selector: 'app-search',
+  templateUrl: './search.component.html',
+  styleUrls: ['./search.component.css']
 })
-export class SinglePropertyComponent implements OnInit {
-  id;
-  agent;
-  properties: any[];
-  property;
+export class SearchComponent implements OnInit {
+
+  propertyList: any[];
   baseUrl = 'http://localhost:8000/storage/images/';
-  baseUrl2 ='http://localhost:8000';
+  //search form var
+  city;
+  type;
+  purpose;
+  bedroom;
+  bathroom;
+  minprice;
+  maxprice;
 
   constructor(
     private activateRoute: ActivatedRoute,
     private router: Router,
     private  agentService: AgentService,
     private  renderer: Renderer2
-  ) { }
+  ) {}
+
 
   renderExternalScript(src: string): HTMLScriptElement {
     const script = document.createElement('script');
@@ -65,16 +73,28 @@ export class SinglePropertyComponent implements OnInit {
 
     this.activateRoute.paramMap.subscribe(params => {
       console.log(params);
-      this.id = params.get('id');
+      this.city = params.get('city');
+      this.type = params.get('type');
+      this.purpose = params.get('purpose');
+      this.minprice = params.get('minprice');
+      this.maxprice = params.get('maxprice');
+      this.bedroom = params.get('bedroom');
+      this.bathroom = params.get('bathroom');
     });
-    this.agentService.property(this.id).subscribe(result => {
+    const search = new FormData();
+    search.append('city', this.city);
+    search.append('type', this.type);
+    search.append('purpose', this.purpose);
+    search.append('minprice', this.minprice);
+    search.append('maxprice', this.maxprice);
+    search.append('bedroom', this.bedroom);
+    search.append('bathroom', this.bathroom);
+
+    this.agentService.searchh(search).subscribe(result => {
       console.log(result);
-      this.property = result.data;
-    });
-    this.agentService.agent(this.id).subscribe( result => {
-      console.log(result);
-      this.agent = result.agent;
-      this.properties = result.property.data;
+      this.propertyList = result.data;
+    },error => {
+      console.log(error);
     });
   }
 

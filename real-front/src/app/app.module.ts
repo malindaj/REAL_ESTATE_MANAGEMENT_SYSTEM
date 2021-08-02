@@ -18,6 +18,12 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { AuthInterceptor } from './shared/auth-interceptor.service';
 import { UserDashboardComponent } from './users/user-dashboard/user-dashboard.component';
 import { TestComponent } from './test/test.component';
+import { Step1Component } from './public/layouts/property/add-property/step1/step1.component';
+import { Step2Component } from './public/layouts/property/add-property/step2/step2.component';
+import { Step3Component } from './public/layouts/property/add-property/step3/step3.component';
+import { Step4Component } from './public/layouts/property/add-property/step4/step4.component';
+import { Step5Component } from './public/layouts/property/add-property/step5/step5.component';
+import { SearchComponent } from './public/search/search.component';
 
 
 @NgModule({
@@ -33,7 +39,13 @@ import { TestComponent } from './test/test.component';
     LoginComponent,
     RegisterComponent,
     UserDashboardComponent,
-    TestComponent
+    TestComponent,
+    Step1Component,
+    Step2Component,
+    Step3Component,
+    Step4Component,
+    Step5Component,
+    SearchComponent
   ],
   imports: [
     BrowserModule,

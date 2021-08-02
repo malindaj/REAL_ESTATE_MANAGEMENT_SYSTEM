@@ -6,7 +6,7 @@
       <!-- headerHolder -->
       <div class="headerHolder clearfix">
         <!-- logo -->
-        <div class="logo alignleft"><a href="#" [routerLink]="'home'" ><img src="assets/images/logo2.png" alt="LemanHouse real estate"></a></div>
+        <div class="logo alignleft"><a href="#" [routerLink]="'home'" ><img src="assets/images/logo-r.png" alt="LemanHouse real estate"></a></div>
         <!-- pageNav -->
         <nav id="pageNav" class="navbar navbar-default navTransparent pageNav5">
           <!-- navbar collapse -->
@@ -19,14 +19,14 @@
                   <a href="#" [routerLink]="'home'" >Home</a>
                 </li>
                 <li>
-                  <a href="#" >Properties</a>
+                  <a href="#" [routerLink]="'property-list'" >Properties</a>
 
                 </li>
                 <li>
-                  <a href="#" >Pages</a>
+                  <a href="#" [routerLink]="'agents'" >Agents</a>
                 </li>
                 <li>
-                  <a href="#" >Blog</a>
+                  <a href="#" >About Us</a>
                 </li>
                 <li>
                   <a href="contact.html">Contact</a>
@@ -64,7 +64,9 @@
               </li>
             </ul>
             <!-- headerModalOpener -->
-            <a href="#" class="headerModalOpener transparentWhite text-uppercase fontNeuron fwBold noShrink hidden-xs"><i class="openerIcon"></i> Submit Property</a>
+            <a href="" class="headerModalOpener transparentWhite text-uppercase fontNeuron fwBold noShrink hidden-xs" *ngIf="isSignedIn" [routerLink]="'/step-1'"><i class="openerIcon"></i> Submit Property</a>
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <a href="" class="headerModalOpener transparentWhite text-uppercase fontNeuron fwBold noShrink hidden-xs" *ngIf="!isSignedIn" [routerLink]="'/login'"><i class="openerIcon"></i> Submit Property</a>
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
